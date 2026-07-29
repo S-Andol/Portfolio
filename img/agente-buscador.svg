@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Agente Buscador Laboral — reporte">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1119"/>
+      <stop offset="1" stop-color="#0c1521"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="rgba(0,255,170,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <rect width="640" height="400" fill="url(#grid)"/>
+
+  <!-- window bar -->
+  <rect x="40" y="40" width="560" height="320" rx="10" fill="#0a1119" stroke="rgba(0,255,170,0.18)"/>
+  <rect x="40" y="40" width="560" height="34" rx="10" fill="rgba(0,0,0,0.35)"/>
+  <circle cx="60" cy="57" r="5" fill="#ff5f57"/>
+  <circle cx="78" cy="57" r="5" fill="#febc2e"/>
+  <circle cx="96" cy="57" r="5" fill="#28c840"/>
+  <text x="120" y="61" font-family="JetBrains Mono, monospace" font-size="12" fill="#7d93a3">buscador_trabajos_v2.py — resultados/2026-07</text>
+
+  <!-- prompt -->
+  <text x="62" y="100" font-family="JetBrains Mono, monospace" font-size="13" fill="#00ffa3">$ <tspan fill="#35d6ff">python</tspan> buscador_trabajos_v2.py --auto</text>
+  <text x="62" y="122" font-family="JetBrains Mono, monospace" font-size="12" fill="#7d93a3">➜ 24 avisos · 6 nuevos · 18 repetidos filtrados</text>
+
+  <!-- rows header -->
+  <text x="62" y="158" font-family="JetBrains Mono, monospace" font-size="11" fill="#4a6072">TÍTULO</text>
+  <text x="400" y="158" font-family="JetBrains Mono, monospace" font-size="11" fill="#4a6072">CATEGORÍA</text>
+  <text x="520" y="158" font-family="JetBrains Mono, monospace" font-size="11" fill="#4a6072">VEREDICTO</text>
+  <line x1="62" y1="166" x2="578" y2="166" stroke="rgba(255,255,255,0.06)"/>
+
+  <!-- row 1 -->
+  <text x="62" y="192" font-family="Poppins, sans-serif" font-size="13" fill="#d6e7e1">Analista de Datos / BI</text>
+  <text x="400" y="192" font-family="JetBrains Mono, monospace" font-size="11" fill="#35d6ff">Data/BI</text>
+  <rect x="520" y="180" width="58" height="18" rx="9" fill="rgba(0,255,163,0.12)" stroke="#00ffa3"/>
+  <text x="549" y="193" font-family="JetBrains Mono, monospace" font-size="10" fill="#00ffa3" text-anchor="middle">POSTULAR</text>
+
+  <!-- row 2 -->
+  <text x="62" y="222" font-family="Poppins, sans-serif" font-size="13" fill="#d6e7e1">Soporte IT — Mesa de ayuda</text>
+  <text x="400" y="222" font-family="JetBrains Mono, monospace" font-size="11" fill="#35d6ff">Soporte IT</text>
+  <rect x="520" y="210" width="58" height="18" rx="9" fill="rgba(0,255,163,0.12)" stroke="#00ffa3"/>
+  <text x="549" y="223" font-family="JetBrains Mono, monospace" font-size="10" fill="#00ffa3" text-anchor="middle">POSTULAR</text>
+
+  <!-- row 3 -->
+  <text x="62" y="252" font-family="Poppins, sans-serif" font-size="13" fill="#d6e7e1">Analista Funcional Sr.</text>
+  <text x="400" y="252" font-family="JetBrains Mono, monospace" font-size="11" fill="#35d6ff">Funcional</text>
+  <rect x="520" y="240" width="58" height="18" rx="9" fill="rgba(255,180,84,0.12)" stroke="#ffb454"/>
+  <text x="549" y="253" font-family="JetBrains Mono, monospace" font-size="10" fill="#ffb454" text-anchor="middle">REVISAR</text>
+
+  <!-- row 4 -->
+  <text x="62" y="282" font-family="Poppins, sans-serif" font-size="13" fill="#d6e7e1">Planner / Supply Chain</text>
+  <text x="400" y="282" font-family="JetBrains Mono, monospace" font-size="11" fill="#35d6ff">Supply Chain</text>
+  <rect x="520" y="270" width="58" height="18" rx="9" fill="rgba(255,180,84,0.12)" stroke="#ffb454"/>
+  <text x="549" y="283" font-family="JetBrains Mono, monospace" font-size="10" fill="#ffb454" text-anchor="middle">REVISAR</text>
+
+  <!-- row 5 -->
+  <text x="62" y="312" font-family="Poppins, sans-serif" font-size="13" fill="#8aa0ac">Call center — turno noche</text>
+  <text x="400" y="312" font-family="JetBrains Mono, monospace" font-size="11" fill="#4a6072">Otro</text>
+  <rect x="516" y="300" width="66" height="18" rx="9" fill="rgba(255,95,87,0.10)" stroke="#ff5f57"/>
+  <text x="549" y="313" font-family="JetBrains Mono, monospace" font-size="10" fill="#ff5f57" text-anchor="middle">DESCARTAR</text>
+
+  <!-- footer tag -->
+  <text x="62" y="344" font-family="JetBrains Mono, monospace" font-size="11" fill="#0bbf86">▣ reporte Excel + hoja RESUMEN generados</text>
+</svg>

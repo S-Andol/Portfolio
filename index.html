@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sergio Andolcetti — Data Analyst &amp; Web Developer</title>
+
+  <meta name="description" content="Sergio Nicolás Andolcetti — Analista de Datos y Desarrollador Web con 8+ años de experiencia en Supply Chain. SQL, Power BI, Python y automatización de procesos. Disponible para nuevas oportunidades." />
+  <meta name="author" content="Sergio Nicolás Andolcetti" />
+  <meta name="keywords" content="Analista de Datos, Data Analyst, Power BI, SQL, Python, Supply Chain, Desarrollador Web, Sergio Andolcetti" />
+  <meta name="theme-color" content="#05080d" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sergio Andolcetti — Data Analyst &amp; Web Developer" />
+  <meta property="og:description" content="8+ años transformando procesos y datos en soluciones digitales. SQL · Power BI · Python · Supply Chain." />
+  <meta property="og:image" content="./img/profile.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/styles.css?v=5" />
+</head>
+<body>
+
+<canvas id="matrix" aria-hidden="true"></canvas>
+
+<header>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <a href="#home" class="brand">sergio<span class="muted">@portfolio</span>:~$</a>
+
+  <nav>
+    <ul id="navLinks">
+      <li><a href="#home" data-i18n="nav_home">Inicio</a></li>
+      <li><a href="#about" data-i18n="nav_about">Sobre Mí</a></li>
+      <li><a href="#skills" data-i18n="nav_skills">Habilidades</a></li>
+      <li><a href="#experience" data-i18n="nav_experience">Experiencia</a></li>
+      <li><a href="#projects" data-i18n="nav_projects">Proyectos</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="lang-switch">
+    <button data-lang="es" class="active">ES</button>
+    <button data-lang="en">EN</button>
+    <button data-lang="it">IT</button>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section id="home">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <div class="window">
+        <div class="win-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="win-title">sergio@portfolio: ~</span>
+        </div>
+        <div class="win-body">
+          <p class="term-line"><span class="t-prompt">visitor@portfolio:~$</span> <span class="t-cmd t-type">whoami</span></p>
+          <p class="term-line t-resp"><span class="t-arrow">➜</span><span class="t-name t-type">Sergio Nicolás Andolcetti</span></p>
+
+          <p class="term-line"><span class="t-prompt">visitor@portfolio:~$</span> <span class="t-cmd t-type">role</span></p>
+          <p class="term-line t-resp"><span class="t-arrow">➜</span><span class="t-type" data-i18n="home_subtitle">Data Analyst | Web Developer | Supply Chain</span></p>
+
+          <p class="term-line"><span class="t-prompt">visitor@portfolio:~$</span> <span class="t-cmd t-type">status</span></p>
+          <p class="term-line t-resp"><span class="status-dot"></span><span class="t-ok t-type" data-i18n="hero_open">Open to work</span><span class="cursor">_</span></p>
+        </div>
+        <div class="hero-actions">
+          <a id="cvDownload" href="./cv-es.pdf" download class="btn" data-i18n="home_cv">Descargar CV</a>
+          <a href="#contact" class="btn-outline" data-i18n="home_contact">./contacto</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="glitch-frame">
+        <div class="glitch-wrap">
+          <img src="./img/profile.jpg?v=2" alt="Sergio Nicolás Andolcetti" class="glitch-img" />
+          <span class="holo-tag">user.identity</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-head"><span class="big" data-i18n="about_title">Sobre Mí</span></h2>
+
+    <div class="window code-card">
+      <div class="win-bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span class="win-title">profile.js</span>
+      </div>
+      <pre class="code"><span class="row"><span class="c-com">// perfil profesional</span></span><span class="row"><span class="c-kw">const</span> <span class="c-key">profile</span> <span class="c-punc">=</span> <span class="c-punc">{</span></span><span class="row">  <span class="c-key">experience</span><span class="c-punc">:</span> <span class="c-str">"+8 años en Supply Chain, producción y datos"</span><span class="c-punc">,</span></span><span class="row">  <span class="c-key">background</span><span class="c-punc">:</span> <span class="c-str">"Supply Chain + Data + Web"</span><span class="c-punc">,</span></span><span class="row">  <span class="c-key">focus</span><span class="c-punc">:</span> <span class="c-str">"automatización, dashboards, decisiones basadas en datos"</span><span class="c-punc">,</span></span><span class="row">  <span class="c-key">learning</span><span class="c-punc">:</span> <span class="c-str">"Ingeniería en Informática @ UADE"</span><span class="c-punc">,</span></span><span class="row">  <span class="c-key">languages</span><span class="c-punc">:</span> <span class="c-punc">[</span><span class="c-str">"ES"</span><span class="c-punc">,</span> <span class="c-str">"EN"</span><span class="c-punc">,</span> <span class="c-str">"IT"</span><span class="c-punc">]</span><span class="c-punc">,</span></span><span class="row">  <span class="c-key">tools</span><span class="c-punc">:</span> <span class="c-punc">[</span><span class="c-str">"SQL"</span><span class="c-punc">,</span> <span class="c-str">"Power BI"</span><span class="c-punc">,</span> <span class="c-str">"Python"</span><span class="c-punc">,</span> <span class="c-str">"Excel"</span><span class="c-punc">,</span> <span class="c-str">"HTML"</span><span class="c-punc">,</span> <span class="c-str">"CSS"</span><span class="c-punc">,</span> <span class="c-str">"JS"</span><span class="c-punc">]</span></span><span class="row"><span class="c-punc">}</span></span></pre>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section id="skills">
+  <div class="container">
+    <h2 class="section-head"><span class="big" data-i18n="skills_title">Habilidades</span></h2>
+
+    <div class="skill-cats">
+      <div class="skill-cat reveal">
+        <div class="cat-head"><span class="t-prompt">$</span> skills <span class="flag">--data</span></div>
+        <div class="cat-title" data-i18n="skillcat_data">Data &amp; BI</div>
+        <div class="chips">
+          <span class="chip">SQL</span>
+          <span class="chip">Power BI</span>
+          <span class="chip">Excel</span>
+          <span class="chip">Data Analytics</span>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal">
+        <div class="cat-head"><span class="t-prompt">$</span> skills <span class="flag">--dev</span></div>
+        <div class="cat-title" data-i18n="skillcat_dev">Desarrollo</div>
+        <div class="chips">
+          <span class="chip alt">HTML</span>
+          <span class="chip alt">CSS</span>
+          <span class="chip alt">JavaScript</span>
+          <span class="chip alt">Python</span>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal">
+        <div class="cat-head"><span class="t-prompt">$</span> skills <span class="flag">--ops</span></div>
+        <div class="cat-title" data-i18n="skillcat_ops">Operaciones</div>
+        <div class="chips">
+          <span class="chip" data-i18n="skill_scm_chip">Supply Chain</span>
+          <span class="chip" data-i18n="skill_plan_chip">Planificación</span>
+          <span class="chip" data-i18n="skill_report_chip">Reporting</span>
+          <span class="chip" data-i18n="skill_improve_chip">Mejora de procesos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section id="experience">
+  <div class="container">
+    <h2 class="section-head"><span class="big" data-i18n="exp_title">Experiencia y Formación</span></h2>
+
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-node"></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <h4 data-i18n="job1_title">Master Planner | Galileo Technologies S.A.</h4>
+            <span class="tl-date" data-i18n="job1_date">Febrero 2024 – Diciembre 2025</span>
+          </div>
+          <ul>
+            <li data-i18n="job1_li1">Planifiqué la demanda y el abastecimiento para asegurar la disponibilidad de materiales y reducir el riesgo de quiebres de stock.</li>
+            <li data-i18n="job1_li2">Consolidé y analicé información de ERP, bases de datos y Excel para dar soporte a decisiones operativas con datos confiables.</li>
+            <li data-i18n="job1_li3">Automaticé y estandaricé reportes e indicadores, dando mayor visibilidad al estado de abastecimiento y planificación.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-node"></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <h4 data-i18n="job3_title">Responsable de Supply Chain | Galileo Technologies S.A.</h4>
+            <span class="tl-date" data-i18n="job3_date">Octubre 2019 – Diciembre 2021</span>
+          </div>
+          <ul>
+            <li data-i18n="job3_li1">Fortalecí el control de inventarios y los niveles de stock para mejorar la disponibilidad y reducir faltantes.</li>
+            <li data-i18n="job3_li2">Implementé mejoras en procesos logísticos para hacerlos más ordenados, trazables y eficientes.</li>
+            <li data-i18n="job3_li3">Lideré y coordiné equipos operativos, alineando prioridades y responsabilidades.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-node"></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <h4 data-i18n="job2_title">Administrativo Supply Chain | Galileo Technologies S.A.</h4>
+            <span class="tl-date" data-i18n="job2_date">Enero 2022 – Enero 2024</span>
+          </div>
+          <ul>
+            <li data-i18n="job2_li1">Gestioné y di seguimiento a órdenes de venta y entregas, asegurando trazabilidad administrativa de punta a punta.</li>
+            <li data-i18n="job2_li3">Elaboré y analicé reportes operativos para dar visibilidad al estado de pedidos, inventarios y abastecimiento.</li>
+            <li data-i18n="job2_li4">Resolví incidencias y coordiné información entre áreas para destrabar operaciones y mejorar los tiempos de respuesta.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-node"></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <h4 data-i18n="job4_title">Supervisor de Producción | Cartones América Argentina S.A.</h4>
+            <span class="tl-date" data-i18n="job4_date">Septiembre 2017 – Septiembre 2019</span>
+          </div>
+          <ul>
+            <li data-i18n="job4_li1">Supervisé equipos de 10 a 30 personas por turno, organizando tareas y prioridades.</li>
+            <li data-i18n="job4_li2">Aseguré el cumplimiento de los planes productivos mediante un seguimiento operativo continuo.</li>
+            <li data-i18n="job4_li5">Coordiné información con logística, mantenimiento y administración para una operación alineada.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <details class="prev-exp">
+      <summary data-i18n="exp_prev">Experiencia previa industrial (2013 – 2017)</summary>
+      <div class="prev-list">
+        <div class="prev-row"><span data-i18n="job5_title">Programador de Producción | Cartones América Argentina S.A.</span><span class="tl-date" data-i18n="job5_date">Enero 2017 – Agosto 2017</span></div>
+        <div class="prev-row"><span data-i18n="job6_title">Jefe de Almacén | Cartones América Argentina S.A.</span><span class="tl-date" data-i18n="job6_date">Septiembre 2015 – Diciembre 2016</span></div>
+        <div class="prev-row"><span data-i18n="job7_title">Asistente de Producción | Cartones América Argentina S.A.</span><span class="tl-date" data-i18n="job7_date">Marzo 2014 – Agosto 2015</span></div>
+        <div class="prev-row"><span data-i18n="job8_title">Asistente de Producción | Productos Termoformados S.R.L.</span><span class="tl-date" data-i18n="job8_date">Septiembre 2013 – Marzo 2014</span></div>
+        <div class="prev-row"><span data-i18n="job9_title">Operario de Producción | Productos Termoformados S.R.L.</span><span class="tl-date" data-i18n="job9_date">Marzo 2013 – Agosto 2013</span></div>
+      </div>
+    </details>
+
+    <h3 class="sub-head" data-i18n="exp_edu">Formación Académica</h3>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <h4 data-i18n="edu1_title">Ingeniería en Informática | UADE</h4>
+        <span class="tl-date" data-i18n="edu1_date">Marzo 2021 – Actualidad · En curso</span>
+        <ul>
+          <li data-i18n="edu1_li1">Programación orientada a objetos (Java)</li>
+          <li data-i18n="edu1_li3">Bases de datos relacionales y SQL</li>
+          <li data-i18n="edu1_li5">Análisis de requerimientos y procesos</li>
+        </ul>
+      </div>
+
+      <div class="edu-card reveal">
+        <h4 data-i18n="edu2_title">Técnico Mecánico en Máquinas y Herramientas</h4>
+        <span class="tl-date" data-i18n="edu2_date">2006 – 2011</span>
+        <ul>
+          <li data-i18n="edu2_li1">Control numérico computarizado (CNC)</li>
+          <li data-i18n="edu2_li4">Controladores programables (PLC)</li>
+          <li data-i18n="edu2_li5">Diseño técnico con AutoCAD 2D y 3D</li>
+        </ul>
+      </div>
+
+      <div class="edu-card reveal">
+        <h4 data-i18n="cert_ch_title">Certificaciones | CoderHouse</h4>
+        <ul class="cert-list">
+          <li><span data-i18n="cert_webdev">Desarrollo Web</span><a href="./Certificados/Desarrollo web - Coder House.png" target="_blank" data-i18n="cert_view">Ver</a></li>
+          <li><span data-i18n="cert_python">Python</span><a href="./Certificados/Python - Coder House.png" target="_blank" data-i18n="cert_view">Ver</a></li>
+          <li><span data-i18n="cert_sql">SQL</span><a href="./Certificados/SQL - Coder House.png" target="_blank" data-i18n="cert_view">Ver</a></li>
+          <li><span data-i18n="cert_da">Data Analytics</span><a href="./Certificados/Data Analytics - Coder House.png" target="_blank" data-i18n="cert_view">Ver</a></li>
+        </ul>
+      </div>
+
+      <div class="edu-card reveal">
+        <h4 data-i18n="cert_sec_title">Ciberseguridad | Educación IT</h4>
+        <ul class="cert-list">
+          <li><span data-i18n="cert_sec_1">Introducción a la Ciberseguridad</span><a href="./Certificados/Certificado-Introducción-a-la-Ciberseguridad-EducaciónIT.pdf" target="_blank" data-i18n="cert_view">Ver</a></li>
+          <li><span data-i18n="cert_sec_2">Cibercrimen y Evidencia Digital</span><a href="./Certificados/Certificado-Cibercrimen-y-Evidencia-Digital-EducaciónIT.pdf" target="_blank" data-i18n="cert_view">Ver</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section id="projects">
+  <div class="container">
+    <h2 class="section-head"><span class="big" data-i18n="projects_title">Proyectos</span></h2>
+
+    <div class="projects-grid">
+
+      <article class="proj-card reveal">
+        <div class="proj-top"><span class="proj-type auto">Agent</span><span class="proj-id">~/proj/01</span></div>
+        <button type="button" class="proj-media" data-gallery='[{"src":"./img/agente-resumen.jpg","t":"gal_resumen_t","s":"gal_resumen_s"},{"src":"./img/agente-todos.jpg","t":"gal_todos_t","s":"gal_todos_s"}]' aria-label="Ver capturas del proyecto Agente Buscador Laboral">
+          <img src="./img/agente-resumen.jpg" alt="Agente Buscador Laboral — hoja RESUMEN con veredictos POSTULAR / REVISAR / DESCARTAR por categoría" />
+          <span class="media-zoom">⤢ <span data-i18n="gallery_view">ver capturas</span></span>
+        </button>
+        <div class="proj-body">
+          <h3 data-i18n="proj_agent_title">Agente Buscador Laboral</h3>
+          <p class="proj-solves"><span class="lbl">solves:</span> <span data-i18n="proj_agent_desc">Agente en Python que busca ofertas laborales, filtra por criterios, evita repetidos con historial por URL, clasifica oportunidades (POSTULAR/REVISAR/DESCARTAR) y genera reportes Excel por mes. La decisión de postular es del usuario.</span></p>
+          <div class="stack">
+            <span class="chip alt">Python</span><span class="chip alt">pandas</span><span class="chip alt">Playwright</span><span class="chip alt">BeautifulSoup</span><span class="chip alt">openpyxl</span>
+          </div>
+          <a class="btn-term" href="https://github.com/sergio-Andol/agente-buscador-laboral" target="_blank" rel="noopener noreferrer" data-i18n="proj_agent_btn">Ver código</a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal">
+        <div class="proj-top"><span class="proj-type">Dashboard</span><span class="proj-id">~/proj/02</span></div>
+        <img src="./img/dashboard.png" alt="Dashboard Power BI" />
+        <div class="proj-body">
+          <h3 data-i18n="proj1_title">Dashboard de Órdenes de Venta</h3>
+          <p class="proj-solves"><span class="lbl">solves:</span> <span data-i18n="proj1_desc">Seguimiento de órdenes, clientes y métodos de envío con KPIs y modelado de datos.</span></p>
+          <div class="stack">
+            <span class="chip">Power BI</span><span class="chip">SQL</span><span class="chip">Modelado</span>
+          </div>
+          <a class="btn-term" href="https://github.com/sergio-Andol/Data-Analytics-Project" target="_blank" data-i18n="proj1_btn">Ver en GitHub</a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal">
+        <div class="proj-top"><span class="proj-type auto">Automation</span><span class="proj-id">~/proj/03</span></div>
+        <img src="./img/Automatizá ventas en Instagram → WhatsApp.png" alt="Automatización Instagram a WhatsApp" />
+        <div class="proj-body">
+          <h3 data-i18n="proj_auto_title">Automatización Instagram → WhatsApp</h3>
+          <p class="proj-solves"><span class="lbl">solves:</span> <span data-i18n="proj_auto_desc">Responde comentarios en Instagram y deriva consultas a WhatsApp, agilizando el primer contacto.</span></p>
+          <div class="stack">
+            <span class="chip alt">ManyChat</span><span class="chip alt">Instagram API</span><span class="chip alt">No-Code</span>
+          </div>
+          <a class="btn-term" href="https://docs.google.com/document/d/18VgB-cTHXMP8T9hL74V7rQLQ9lwM5jnn9aUUElCrtIU/edit?usp=sharing" target="_blank" data-i18n="proj_auto_btn">Ver documentación</a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal">
+        <div class="proj-top"><span class="proj-type web">Web App</span><span class="proj-id">~/proj/04</span></div>
+        <img src="./img/Terapia Animal.png" alt="Terapia Animal" />
+        <div class="proj-body">
+          <h3 data-i18n="proj2_title">Terapia Animal</h3>
+          <p class="proj-solves"><span class="lbl">solves:</span> <span data-i18n="proj2_desc">Sitio institucional de servicios con foco en experiencia de usuario y navegación simple.</span></p>
+          <div class="stack">
+            <span class="chip alt">HTML</span><span class="chip alt">CSS</span><span class="chip alt">UX/UI</span>
+          </div>
+          <a class="btn-term" href="https://s-andol.github.io/Terapia-Animal/" target="_blank" data-i18n="proj2_btn">Ver Página</a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal">
+        <div class="proj-top"><span class="proj-type web">Web App</span><span class="proj-id">~/proj/05</span></div>
+        <img src="./img/Eureka.png" alt="Eureka" />
+        <div class="proj-body">
+          <h3 data-i18n="proj3_title">Diseño Web Eureka</h3>
+          <p class="proj-solves"><span class="lbl">solves:</span> <span data-i18n="proj3_desc">Plataforma educativa responsive con navegación por secciones para cualquier dispositivo.</span></p>
+          <div class="stack">
+            <span class="chip alt">HTML</span><span class="chip alt">CSS</span><span class="chip alt">Responsive</span>
+          </div>
+          <a class="btn-term" href="https://sergio-andol.github.io/TPO-Eureka/" target="_blank" data-i18n="proj3_btn">Ver Página</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-head"><span class="big" data-i18n="contact_title">Contacto</span></h2>
+
+    <div class="window contact-term">
+      <div class="win-bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span class="win-title">connect.sh</span>
+      </div>
+      <div class="win-body">
+        <div class="c-row">
+          <span class="c-cmd"><span class="t-prompt">$</span> connect <span class="flag">--email</span></span>
+          <a href="mailto:sergio.andol@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            sergio.andol@gmail.com
+          </a>
+          <button class="copy-btn" onclick="copyToClipboard('sergio.andol@gmail.com')">[copy]</button>
+        </div>
+
+        <div class="c-row">
+          <span class="c-cmd"><span class="t-prompt">$</span> connect <span class="flag">--linkedin</span></span>
+          <a href="https://linkedin.com/in/sergio-andolcetti" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            in/sergio-andolcetti
+          </a>
+          <button class="copy-btn" onclick="copyToClipboard('https://linkedin.com/in/sergio-andolcetti')">[copy]</button>
+        </div>
+
+        <div class="c-row">
+          <span class="c-cmd"><span class="t-prompt">$</span> connect <span class="flag">--github</span></span>
+          <a href="https://github.com/sergio-Andol" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            github.com/sergio-Andol
+          </a>
+          <button class="copy-btn" onclick="copyToClipboard('https://github.com/sergio-Andol')">[copy]</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><span class="neon">&gt;</span> &copy; 2026 Sergio Nicolás Andolcetti · <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
+</footer>
+
+<div id="toast" class="toast">Copiado ✓</div>
+<button id="toTop" class="to-top" aria-label="Volver arriba">↑</button>
+
+<!-- Lightbox / galería -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lb-close" aria-label="Cerrar">✕</button>
+  <div class="lb-content"></div>
+</div>
+
+<script src="./js/matrix.js?v=6"></script>
+<script src="./js/main.js?v=6"></script>
+<script src="./js/reveal.js?v=6"></script>
+<script src="./js/i18n.js?v=6"></script>
+
+</body>
+</html>
