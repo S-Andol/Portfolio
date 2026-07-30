@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="./css/styles.css?v=5" />
+  <link rel="stylesheet" href="./css/styles.css?v=7" />
 </head>
 <body>
 
@@ -276,7 +276,23 @@
     <div class="projects-grid">
 
       <article class="proj-card reveal">
-        <div class="proj-top"><span class="proj-type auto">Agent</span><span class="proj-id">~/proj/01</span></div>
+        <div class="proj-top"><span class="proj-type web">Web App</span><span class="proj-id">~/proj/01</span></div>
+        <button type="button" class="proj-media" data-gallery='[{"src":"./img/gen-main.jpg","t":"gal_gen1_t","s":"gal_gen1_s"},{"src":"./img/gen-cv.jpg","t":"gal_gen2_t","s":"gal_gen2_s"},{"src":"./img/gen-resultados.jpg","t":"gal_gen3_t","s":"gal_gen3_s"}]' aria-label="Ver capturas del proyecto Agente Laboral Gen">
+          <img src="./img/gen-main.jpg" alt="Agente Laboral Gen — pantalla principal de la app en Streamlit" />
+          <span class="media-zoom">⤢ <span data-i18n="gallery_view">ver capturas</span></span>
+        </button>
+        <div class="proj-body">
+          <h3 data-i18n="proj_gen_title">Agente Laboral Gen</h3>
+          <p class="proj-solves"><span class="lbl">solves:</span> <span data-i18n="proj_gen_desc">Aplicación local en Python y Streamlit que analiza un CV, detecta habilidades y categorías laborales, genera búsquedas sugeridas, consulta ofertas reales en Computrabajo y Bumeran, elimina duplicados, clasifica resultados y permite exportarlos a Excel.</span></p>
+          <div class="stack">
+            <span class="chip alt">Python</span><span class="chip alt">Streamlit</span><span class="chip alt">Pandas</span><span class="chip alt">BeautifulSoup</span><span class="chip alt">Requests</span><span class="chip alt">Playwright</span><span class="chip alt">OpenPyXL</span><span class="chip alt">pypdf</span><span class="chip alt">python-docx</span>
+          </div>
+          <a class="btn-term" href="https://github.com/sergio-Andol/agente-laboral-gen" target="_blank" rel="noopener noreferrer" data-i18n="proj_gen_btn">Ver código</a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal">
+        <div class="proj-top"><span class="proj-type auto">Agent</span><span class="proj-id">~/proj/02</span></div>
         <button type="button" class="proj-media" data-gallery='[{"src":"./img/agente-resumen.jpg","t":"gal_resumen_t","s":"gal_resumen_s"},{"src":"./img/agente-todos.jpg","t":"gal_todos_t","s":"gal_todos_s"}]' aria-label="Ver capturas del proyecto Agente Buscador Laboral">
           <img src="./img/agente-resumen.jpg" alt="Agente Buscador Laboral — hoja RESUMEN con veredictos POSTULAR / REVISAR / DESCARTAR por categoría" />
           <span class="media-zoom">⤢ <span data-i18n="gallery_view">ver capturas</span></span>
@@ -292,7 +308,7 @@
       </article>
 
       <article class="proj-card reveal">
-        <div class="proj-top"><span class="proj-type">Dashboard</span><span class="proj-id">~/proj/02</span></div>
+        <div class="proj-top"><span class="proj-type">Dashboard</span><span class="proj-id">~/proj/03</span></div>
         <img src="./img/dashboard.png" alt="Dashboard Power BI" />
         <div class="proj-body">
           <h3 data-i18n="proj1_title">Dashboard de Órdenes de Venta</h3>
@@ -305,7 +321,7 @@
       </article>
 
       <article class="proj-card reveal">
-        <div class="proj-top"><span class="proj-type auto">Automation</span><span class="proj-id">~/proj/03</span></div>
+        <div class="proj-top"><span class="proj-type auto">Automation</span><span class="proj-id">~/proj/04</span></div>
         <img src="./img/Automatizá ventas en Instagram → WhatsApp.png" alt="Automatización Instagram a WhatsApp" />
         <div class="proj-body">
           <h3 data-i18n="proj_auto_title">Automatización Instagram → WhatsApp</h3>
@@ -318,7 +334,7 @@
       </article>
 
       <article class="proj-card reveal">
-        <div class="proj-top"><span class="proj-type web">Web App</span><span class="proj-id">~/proj/04</span></div>
+        <div class="proj-top"><span class="proj-type web">Web App</span><span class="proj-id">~/proj/05</span></div>
         <img src="./img/Terapia Animal.png" alt="Terapia Animal" />
         <div class="proj-body">
           <h3 data-i18n="proj2_title">Terapia Animal</h3>
@@ -331,7 +347,7 @@
       </article>
 
       <article class="proj-card reveal">
-        <div class="proj-top"><span class="proj-type web">Web App</span><span class="proj-id">~/proj/05</span></div>
+        <div class="proj-top"><span class="proj-type web">Web App</span><span class="proj-id">~/proj/06</span></div>
         <img src="./img/Eureka.png" alt="Eureka" />
         <div class="proj-body">
           <h3 data-i18n="proj3_title">Diseño Web Eureka</h3>
@@ -402,10 +418,10 @@
   <div class="lb-content"></div>
 </div>
 
-<script src="./js/matrix.js?v=6"></script>
-<script src="./js/main.js?v=6"></script>
-<script src="./js/reveal.js?v=6"></script>
-<script src="./js/i18n.js?v=6"></script>
+<script src="./js/matrix.js?v=8"></script>
+<script src="./js/main.js?v=8"></script>
+<script src="./js/reveal.js?v=8"></script>
+<script src="./js/i18n.js?v=8"></script>
 
 </body>
 </html>

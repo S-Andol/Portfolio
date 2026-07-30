@@ -194,6 +194,17 @@
       gal_todos_t: "Ofertas clasificadas",
       gal_todos_s: "Vista con categorías, decisión sugerida y datos del aviso.",
 
+      proj_gen_title: "Agente Laboral Gen",
+      proj_gen_desc:
+        "Aplicación local en Python y Streamlit que analiza un CV, detecta habilidades y categorías laborales, genera búsquedas sugeridas, consulta ofertas reales en Computrabajo y Bumeran, elimina duplicados, clasifica resultados y permite exportarlos a Excel.",
+      proj_gen_btn: "Ver código",
+      gal_gen1_t: "Pantalla principal",
+      gal_gen1_s: "Pantalla principal de Agente Laboral Gen con modo de búsqueda real y estado de seguridad.",
+      gal_gen2_t: "Análisis de CV",
+      gal_gen2_s: "Filtros y búsquedas generadas desde el perfil detectado, con métricas de ofertas procesadas.",
+      gal_gen3_t: "Resultados reales",
+      gal_gen3_s: "Resultados reales de Computrabajo con deduplicación, clasificación y métricas.",
+
       proj1_title: "Dashboard de Órdenes de Venta",
       proj1_desc:
         "Dashboard interactivo en Power BI para el seguimiento de órdenes, clientes y métodos de envío, con modelado de datos y KPIs que dan visibilidad al estado comercial y operativo.",
@@ -421,6 +432,17 @@
       gal_todos_t: "Classified job offers",
       gal_todos_s: "View with categories, suggested decision and posting details.",
 
+      proj_gen_title: "Agente Laboral Gen",
+      proj_gen_desc:
+        "Local application built with Python and Streamlit that analyzes a CV, detects skills and job categories, generates suggested job searches, queries real job listings from Computrabajo and Bumeran, removes duplicates, classifies results, and exports them to Excel.",
+      proj_gen_btn: "View code",
+      gal_gen1_t: "Main screen",
+      gal_gen1_s: "Main screen of Agente Laboral Gen with real search mode and safety status.",
+      gal_gen2_t: "CV analysis",
+      gal_gen2_s: "Filters and searches generated from the detected profile, with processed job listing metrics.",
+      gal_gen3_t: "Real results",
+      gal_gen3_s: "Real Computrabajo results with deduplication, classification, and metrics.",
+
       proj1_title: "Sales Orders Dashboard",
       proj1_desc:
         "Interactive Power BI dashboard to track orders, customers and shipping methods, with data modeling and KPIs that give visibility into commercial and operational status.",
@@ -647,6 +669,17 @@
       gal_resumen_s: "Totali, verdetti e stato di esecuzione.",
       gal_todos_t: "Offerte classificate",
       gal_todos_s: "Vista con categorie, decisione suggerita e dati dell'annuncio.",
+
+      proj_gen_title: "Agente Laboral Gen",
+      proj_gen_desc:
+        "Applicazione locale sviluppata con Python e Streamlit che analizza un CV, rileva competenze e categorie professionali, genera ricerche di lavoro suggerite, consulta offerte reali da Computrabajo e Bumeran, elimina i duplicati, classifica i risultati ed esporta tutto in Excel.",
+      proj_gen_btn: "Vedi codice",
+      gal_gen1_t: "Schermata principale",
+      gal_gen1_s: "Schermata principale di Agente Laboral Gen con modalità di ricerca reale e stato di sicurezza.",
+      gal_gen2_t: "Analisi del CV",
+      gal_gen2_s: "Filtri e ricerche generate dal profilo rilevato, con metriche delle offerte elaborate.",
+      gal_gen3_t: "Risultati reali",
+      gal_gen3_s: "Risultati reali di Computrabajo con deduplicazione, classificazione e metriche.",
 
       proj1_title: "Dashboard Ordini di Vendita",
       proj1_desc:
