@@ -156,7 +156,7 @@
 
       // Education
       edu1_title: "Ingeniería en Informática | UADE",
-      edu1_date: "Marzo 2021 – Actualidad · En curso",
+      edu1_date: "Marzo 2022 – Actualidad · En curso",
       edu1_desc1:
         "Carrera orientada al desarrollo de software, el análisis de sistemas y el procesamiento de datos, con fuerte énfasis en programación, bases de datos y resolución de problemas.",
       edu1_li1: "Programación orientada a objetos (Java)",
@@ -407,7 +407,7 @@
       job9_li4: "Worked as part of a team in the production area.",
 
       edu1_title: "Computer Engineering | UADE",
-      edu1_date: "Mar 2021 – Present · Ongoing",
+      edu1_date: "Mar 2022 – Present · Ongoing",
       edu1_desc1:
         "Degree focused on software development, systems analysis and data processing, with strong emphasis on programming, databases and problem-solving.",
       edu1_li1: "Object-oriented programming (Java)",
@@ -656,7 +656,7 @@
       job9_li4: "Ho lavorato in squadra all'interno dell'area produttiva.",
 
       edu1_title: "Ingegneria Informatica | UADE",
-      edu1_date: "Mar 2021 – Oggi · In corso",
+      edu1_date: "Mar 2022 – Oggi · In corso",
       edu1_desc1:
         "Percorso orientato allo sviluppo software, all'analisi dei sistemi e al data processing, con forte enfasi su programmazione, database e problem solving.",
       edu1_li1: "Programmazione a oggetti (Java)",
