@@ -49,6 +49,10 @@
         "Profesional con más de 8 años de experiencia en Supply Chain, producción y análisis de datos, actualmente cursando Ingeniería en Informática. Combino una sólida base operativa con herramientas técnicas para ordenar procesos, dar visibilidad a la información y facilitar la toma de decisiones.",
       about_p2:
         "Trabajo con SQL, Power BI, Excel avanzado, Python y tecnologías web (HTML, CSS, JavaScript). Aporto pensamiento analítico, autonomía y una mirada de mejora continua sobre procesos administrativos, de planificación y abastecimiento.",
+      about_code_comment: "// perfil profesional",
+      about_code_experience: "\"+8 años en Supply Chain, producción y datos\"",
+      about_code_focus: "\"automatización, dashboards, decisiones basadas en datos\"",
+      about_code_learning: "\"Ingeniería en Informática @ UADE\"",
 
       exp_title: "Experiencia y Formación",
       exp_work: "Experiencia Laboral",
@@ -291,6 +295,10 @@
         "Professional with 8+ years of experience in Supply Chain, production and data analysis, currently studying Computer Engineering. I combine a solid operational background with technical tools to organize processes, give visibility to information and support decision-making.",
       about_p2:
         "I work with SQL, Power BI, advanced Excel, Python and web technologies (HTML, CSS, JavaScript). I bring analytical thinking, autonomy and a continuous-improvement mindset to administrative, planning and supply processes.",
+      about_code_comment: "// professional profile",
+      about_code_experience: "\"+8 years in Supply Chain, production and data\"",
+      about_code_focus: "\"automation, dashboards, data-driven decisions\"",
+      about_code_learning: "\"Computer Engineering @ UADE\"",
 
       exp_title: "Experience & Education",
       exp_work: "Work Experience",
@@ -529,6 +537,10 @@
         "Professionista con oltre 8 anni di esperienza in Supply Chain, produzione e analisi dei dati, attualmente studente di Ingegneria Informatica. Unisco una solida base operativa a strumenti tecnici per ordinare i processi, dare visibilità alle informazioni e facilitare il processo decisionale.",
       about_p2:
         "Lavoro con SQL, Power BI, Excel avanzato, Python e tecnologie web (HTML, CSS, JavaScript). Porto pensiero analitico, autonomia e una mentalità di miglioramento continuo nei processi amministrativi, di pianificazione e approvvigionamento.",
+      about_code_comment: "// profilo professionale",
+      about_code_experience: "\"+8 anni in Supply Chain, produzione e dati\"",
+      about_code_focus: "\"automazione, dashboard, decisioni basate sui dati\"",
+      about_code_learning: "\"Ingegneria Informatica @ UADE\"",
 
       exp_title: "Esperienza e Formazione",
       exp_work: "Esperienza Lavorativa",
