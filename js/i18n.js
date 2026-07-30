@@ -9,7 +9,9 @@
       nav_contact: "Contacto",
 
       home_greeting: "Hola, mi nombre es",
-      home_subtitle: "Analista de Datos | Desarrollador Web | Supply Chain",
+      home_subtitle: "Análisis de Datos · Automatización · Desarrollo Web",
+      hero_focus: "Transformo procesos operativos en datos, dashboards y herramientas.",
+      meta_title: "Sergio Andolcetti — Datos · Automatización · Desarrollo",
       home_line1: "Transformo procesos y datos en soluciones digitales claras, ordenadas y orientadas a la toma de decisiones.",
       home_line2:
         "Más de 8 años de experiencia en Supply Chain y producción, sumados a una formación técnica en Ingeniería en Informática, análisis de datos, automatización y desarrollo web.",
@@ -20,11 +22,15 @@
 
       skillcat_data: "Data & BI",
       skillcat_dev: "Desarrollo",
+      skillcat_auto: "Automatización & Apps",
       skillcat_ops: "Operaciones",
       skill_scm_chip: "Supply Chain",
       skill_plan_chip: "Planificación",
       skill_report_chip: "Reporting",
       skill_improve_chip: "Mejora de procesos",
+      skill_auto_chip: "Automatización",
+      skill_agents_chip: "Agentes",
+      skill_inventory_chip: "Inventarios",
       exp_prev: "Experiencia previa industrial (2013 – 2017)",
 
       badge_data: "📊 Data Analyst",
@@ -50,8 +56,9 @@
       about_p2:
         "Trabajo con SQL, Power BI, Excel avanzado, Python y tecnologías web (HTML, CSS, JavaScript). Aporto pensamiento analítico, autonomía y una mirada de mejora continua sobre procesos administrativos, de planificación y abastecimiento.",
       about_code_comment: "// perfil profesional",
-      about_code_experience: "\"+8 años en Supply Chain, producción y datos\"",
-      about_code_focus: "\"automatización, dashboards, decisiones basadas en datos\"",
+      about_code_experience: "\"Experiencia en Supply Chain, planificación y procesos\"",
+      about_code_focus: "\"análisis de datos, automatización y desarrollo de herramientas\"",
+      about_code_approach: "\"soluciones prácticas orientadas al negocio\"",
       about_code_learning: "\"Ingeniería en Informática @ UADE\"",
 
       exp_title: "Experiencia y Formación",
@@ -255,7 +262,9 @@
       nav_contact: "Contact",
 
       home_greeting: "Hi, my name is",
-      home_subtitle: "Data Analyst | Web Developer | Supply Chain",
+      home_subtitle: "Data Analysis · Automation · Web Development",
+      hero_focus: "I turn operational processes into data, dashboards and tools.",
+      meta_title: "Sergio Andolcetti — Data · Automation · Development",
       home_line1: "I turn processes and data into clear, well-structured digital solutions built to support decision-making.",
       home_line2:
         "8+ years of experience in Supply Chain and production, combined with technical training in Computer Engineering, data analysis, automation and web development.",
@@ -266,11 +275,15 @@
 
       skillcat_data: "Data & BI",
       skillcat_dev: "Development",
+      skillcat_auto: "Automation & Apps",
       skillcat_ops: "Operations",
       skill_scm_chip: "Supply Chain",
       skill_plan_chip: "Planning",
       skill_report_chip: "Reporting",
       skill_improve_chip: "Process Improvement",
+      skill_auto_chip: "Automation",
+      skill_agents_chip: "Agents",
+      skill_inventory_chip: "Inventory",
       exp_prev: "Previous industrial experience (2013 – 2017)",
 
       badge_data: "📊 Data Analyst",
@@ -296,8 +309,9 @@
       about_p2:
         "I work with SQL, Power BI, advanced Excel, Python and web technologies (HTML, CSS, JavaScript). I bring analytical thinking, autonomy and a continuous-improvement mindset to administrative, planning and supply processes.",
       about_code_comment: "// professional profile",
-      about_code_experience: "\"+8 years in Supply Chain, production and data\"",
-      about_code_focus: "\"automation, dashboards, data-driven decisions\"",
+      about_code_experience: "\"Experience in Supply Chain, planning and processes\"",
+      about_code_focus: "\"data analysis, automation and tool development\"",
+      about_code_approach: "\"practical, business-oriented solutions\"",
       about_code_learning: "\"Computer Engineering @ UADE\"",
 
       exp_title: "Experience & Education",
@@ -497,7 +511,9 @@
       nav_contact: "Contatto",
 
       home_greeting: "Ciao, sono",
-      home_subtitle: "Analista di Dati | Sviluppatore Web | Supply Chain",
+      home_subtitle: "Analisi Dati · Automazione · Sviluppo Web",
+      hero_focus: "Trasformo processi operativi in dati, dashboard e strumenti.",
+      meta_title: "Sergio Andolcetti — Dati · Automazione · Sviluppo",
       home_line1: "Trasformo processi e dati in soluzioni digitali chiare, ordinate e orientate al supporto decisionale.",
       home_line2:
         "Oltre 8 anni di esperienza in Supply Chain e produzione, uniti a una formazione tecnica in Ingegneria Informatica, analisi dei dati, automazione e sviluppo web.",
@@ -508,11 +524,15 @@
 
       skillcat_data: "Data & BI",
       skillcat_dev: "Sviluppo",
+      skillcat_auto: "Automazione & App",
       skillcat_ops: "Operazioni",
       skill_scm_chip: "Supply Chain",
       skill_plan_chip: "Pianificazione",
       skill_report_chip: "Reporting",
       skill_improve_chip: "Miglioramento processi",
+      skill_auto_chip: "Automazione",
+      skill_agents_chip: "Agenti",
+      skill_inventory_chip: "Inventari",
       exp_prev: "Esperienza industriale precedente (2013 – 2017)",
 
       badge_data: "📊 Data Analyst",
@@ -538,8 +558,9 @@
       about_p2:
         "Lavoro con SQL, Power BI, Excel avanzato, Python e tecnologie web (HTML, CSS, JavaScript). Porto pensiero analitico, autonomia e una mentalità di miglioramento continuo nei processi amministrativi, di pianificazione e approvvigionamento.",
       about_code_comment: "// profilo professionale",
-      about_code_experience: "\"+8 anni in Supply Chain, produzione e dati\"",
-      about_code_focus: "\"automazione, dashboard, decisioni basate sui dati\"",
+      about_code_experience: "\"Esperienza in Supply Chain, pianificazione e processi\"",
+      about_code_focus: "\"analisi dei dati, automazione e sviluppo di strumenti\"",
+      about_code_approach: "\"soluzioni pratiche orientate al business\"",
       about_code_learning: "\"Ingegneria Informatica @ UADE\"",
 
       exp_title: "Esperienza e Formazione",
@@ -744,6 +765,7 @@
     currentLang = translations[lang] ? lang : "es";
 
     document.documentElement.lang = lang;
+    if (dict.meta_title) document.title = dict.meta_title;
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.dataset.i18n;

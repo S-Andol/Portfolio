@@ -377,7 +377,7 @@ nav a:hover::before, nav a.active::before{ opacity:1; }
 ========================================================= */
 .skill-cats{
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 18px;
 }
 .skill-cat{
@@ -713,6 +713,10 @@ footer .neon{ color: var(--neon); }
   nav li{ width:100%; text-align:center; padding:13px 0; border-top:1px solid var(--line-soft); }
   section{ padding: 64px 0; }
   .win-body{ font-size:13px; padding:16px; }
+  /* hero mas compacto en mobile: la linea focus no debe empujar los botones fuera de vista */
+  #home{ padding-top: 96px; min-height: auto; }
+  .win-body .term-line{ margin-bottom: 6px; }
+  .hero-actions{ padding: 14px 16px 16px; }
 }
 
 @media (max-width: 520px){
