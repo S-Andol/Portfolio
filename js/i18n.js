@@ -221,7 +221,7 @@
 
       proj_nexo_title: "NEXO Salud",
       proj_nexo_desc:
-        "Sistema web de turnos médicos (Proyecto Integrador de Testing de Aplicaciones, UADE): registro e inicio de sesión, profesionales y especialidades, disponibilidad real, reserva y cancelación con reglas de negocio. Evita turnos duplicados con transacciones Serializable y exclusion constraints de PostgreSQL, y se valida con tests unitarios y de integración.",
+        "Sistema web de turnos médicos para el Proyecto Integrador de Testing de Aplicaciones (UADE). Desarrollé la aplicación completa y coordiné al equipo en la etapa de testing. Incluye registro e inicio de sesión, profesionales y especialidades, disponibilidad real, reserva y cancelación con reglas de negocio; evita turnos duplicados con transacciones Serializable y exclusion constraints de PostgreSQL, y se valida con tests unitarios y de integración.",
       gal_nexo1_t: "Inicio",
       gal_nexo1_s: "Página pública con acceso a la reserva de turnos y al listado de profesionales.",
       gal_nexo2_t: "Profesionales",
@@ -237,7 +237,7 @@
 
       proj_mosquito_title: "El Gran Mosquito",
       proj_mosquito_desc:
-        "Sitio web para una parrilla de Almagro (CABA): carta, horarios con estado abierto/cerrado en tiempo real, reseñas y un formulario de reserva que arma el mensaje y lo envía por WhatsApp. Contenido centralizado en un único archivo de datos para que sea fácil de mantener.",
+        "Proyecto personal: propuesta de sitio web para una parrilla de Almagro (CABA), con carta, horarios con estado abierto/cerrado en tiempo real, reseñas y un formulario de reserva que arma el mensaje y lo envía por WhatsApp. Contenido centralizado en un único archivo de datos para que sea fácil de mantener.",
       gal_resumen_t: "Reporte resumen del agente",
       gal_resumen_s: "Totales, veredictos y estado de ejecución.",
       gal_todos_t: "Ofertas clasificadas",
@@ -508,7 +508,7 @@
 
       proj_nexo_title: "NEXO Salud",
       proj_nexo_desc:
-        "Medical appointment web system (Application Testing capstone project, UADE): sign-up and login, professionals and specialties, real availability, booking and cancellation driven by business rules. It prevents double-booking with Serializable transactions and PostgreSQL exclusion constraints, and is validated with unit and integration tests.",
+        "Medical appointment web system for the Application Testing capstone project (UADE). I built the entire application and coordinated the team during the testing phase. It covers sign-up and login, professionals and specialties, real availability, booking and cancellation driven by business rules; it prevents double-booking with Serializable transactions and PostgreSQL exclusion constraints, and is validated with unit and integration tests.",
       gal_nexo1_t: "Home",
       gal_nexo1_s: "Public page with access to appointment booking and the list of professionals.",
       gal_nexo2_t: "Professionals",
@@ -524,7 +524,7 @@
 
       proj_mosquito_title: "El Gran Mosquito",
       proj_mosquito_desc:
-        "Website for a steakhouse in Almagro (Buenos Aires): menu, opening hours with real-time open/closed status, reviews and a booking form that builds the message and sends it through WhatsApp. Content is centralized in a single data file so it is easy to maintain.",
+        "Personal project: website proposal for a steakhouse in Almagro (Buenos Aires), with menu, opening hours with real-time open/closed status, reviews and a booking form that builds the message and sends it through WhatsApp. Content is centralized in a single data file so it is easy to maintain.",
       gal_resumen_t: "Agent summary report",
       gal_resumen_s: "Totals, verdicts and execution status.",
       gal_todos_t: "Classified job offers",
@@ -795,7 +795,7 @@
 
       proj_nexo_title: "NEXO Salud",
       proj_nexo_desc:
-        "Sistema web per la gestione di appuntamenti medici (progetto integratore di Testing di Applicazioni, UADE): registrazione e accesso, professionisti e specialità, disponibilità reale, prenotazione e cancellazione con regole di business. Evita le doppie prenotazioni con transazioni Serializable ed exclusion constraint di PostgreSQL, ed è validato con test unitari e di integrazione.",
+        "Sistema web per la gestione di appuntamenti medici per il progetto integratore di Testing di Applicazioni (UADE). Ho sviluppato l'intera applicazione e coordinato il team nella fase di testing. Include registrazione e accesso, professionisti e specialità, disponibilità reale, prenotazione e cancellazione con regole di business; evita le doppie prenotazioni con transazioni Serializable ed exclusion constraint di PostgreSQL, ed è validato con test unitari e di integrazione.",
       gal_nexo1_t: "Home",
       gal_nexo1_s: "Pagina pubblica con accesso alla prenotazione e all'elenco dei professionisti.",
       gal_nexo2_t: "Professionisti",
@@ -811,7 +811,7 @@
 
       proj_mosquito_title: "El Gran Mosquito",
       proj_mosquito_desc:
-        "Sito web per una griglieria di Almagro (Buenos Aires): menù, orari con stato aperto/chiuso in tempo reale, recensioni e un modulo di prenotazione che compone il messaggio e lo invia tramite WhatsApp. I contenuti sono centralizzati in un unico file di dati, facile da mantenere.",
+        "Progetto personale: proposta di sito web per una griglieria di Almagro (Buenos Aires), con menù, orari con stato aperto/chiuso in tempo reale, recensioni e un modulo di prenotazione che compone il messaggio e lo invia tramite WhatsApp. I contenuti sono centralizzati in un unico file di dati, facile da mantenere.",
       gal_resumen_t: "Report riepilogativo dell'agente",
       gal_resumen_s: "Totali, verdetti e stato di esecuzione.",
       gal_todos_t: "Offerte classificate",
