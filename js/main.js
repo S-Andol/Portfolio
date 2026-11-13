@@ -12,9 +12,13 @@
     }
     return toast;
   }
-  function showToast(message = "Copiado ✓") {
+  const tr = (key, fallback) => {
+    const v = typeof window.i18nT === "function" ? window.i18nT(key) : "";
+    return v || fallback;
+  };
+  function showToast(message) {
     const toast = ensureToast();
-    toast.textContent = message;
+    toast.textContent = message || tr("toast_copied", "Copiado ✓");
     toast.classList.add("show");
     setTimeout(() => toast.classList.remove("show"), 1200);
   }
@@ -25,11 +29,11 @@
       document.body.appendChild(ta);
       ta.select();
       try { document.execCommand("copy"); showToast(); }
-      catch (e) { showToast("No se pudo copiar"); }
+      catch (e) { showToast(tr("toast_copy_fail", "No se pudo copiar")); }
       document.body.removeChild(ta);
       return;
     }
-    navigator.clipboard.writeText(text).then(() => showToast()).catch(() => showToast("No se pudo copiar"));
+    navigator.clipboard.writeText(text).then(() => showToast()).catch(() => showToast(tr("toast_copy_fail", "No se pudo copiar")));
   };
   window.showToast = showToast;
 
@@ -75,8 +79,41 @@
       toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
     }
 
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
+
+    /* ----- botones de copiar (data-copy) ----- */
+    document.querySelectorAll("[data-copy]").forEach((btn) => {
+      btn.addEventListener("click", () => window.copyToClipboard(btn.dataset.copy));
+    });
+
+    /* ----- filtros de proyectos ----- */
+    const filterBtns = document.querySelectorAll(".proj-filter button[data-filter]");
+    const cards = document.querySelectorAll(".proj-card[data-cat]");
+    if (filterBtns.length && cards.length) {
+      // contador por categoria
+      filterBtns.forEach((btn) => {
+        const f = btn.dataset.filter;
+        const n = f === "all" ? cards.length : Array.from(cards).filter((c) => c.dataset.cat === f).length;
+        const badge = btn.querySelector(".pf-n");
+        if (badge) badge.textContent = n;
+      });
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const f = btn.dataset.filter;
+          filterBtns.forEach((b) => {
+            const on = b === btn;
+            b.classList.toggle("active", on);
+            b.setAttribute("aria-pressed", on ? "true" : "false");
+          });
+          cards.forEach((card) => {
+            const show = f === "all" || card.dataset.cat === f;
+            card.classList.toggle("is-hidden", !show);
+            if (show) card.classList.add("active"); // ya visible: no esperar al scroll-reveal
+          });
+        });
+      });
+    }
   });
 
   /* ===== Hero terminal typewriter ===== */
@@ -129,6 +166,7 @@
     if (!lb) return;
     const content = lb.querySelector(".lb-content");
     const closeBtn = lb.querySelector(".lb-close");
+    let lastFocus = null;
 
     const t = (k) => (typeof window.i18nT === "function" ? window.i18nT(k) : "");
 
@@ -172,15 +210,18 @@
 
         content.appendChild(fig);
       });
+      lastFocus = document.activeElement;
       lb.classList.add("open");
       lb.setAttribute("aria-hidden", "false");
       document.body.style.overflow = "hidden";
+      closeBtn.focus();
     }
     function close() {
       lb.classList.remove("open");
       lb.setAttribute("aria-hidden", "true");
       document.body.style.overflow = "";
       content.innerHTML = "";
+      if (lastFocus && typeof lastFocus.focus === "function") lastFocus.focus();
     }
 
     document.querySelectorAll("[data-gallery]").forEach((el) => {

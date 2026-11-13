@@ -200,6 +200,44 @@
         "Agente en Python que busca ofertas laborales, filtra por fecha, zona y palabras clave, evita repetidos con historial por URL (vistos.json), clasifica oportunidades (POSTULAR/REVISAR/DESCARTAR) por categoría y genera reportes Excel por mes. La decisión de postular la mantiene el usuario.",
       proj_agent_btn: "Ver código",
       gallery_view: "ver capturas",
+
+      // --- mejoras nov 2026 ---
+      skip_link: "Saltar al contenido",
+      home_projects: "./proyectos",
+      skill_desktop_chip: "Apps de escritorio",
+      edu1_li7: "Testing de aplicaciones (proyecto integrador)",
+      filter_all: "todos",
+      filter_auto: "automatización",
+      filter_desktop: "escritorio",
+      type_prototype: "Prototipo web",
+      type_wip: "Web · en desarrollo",
+      btn_demo: "Ver demo",
+      btn_code: "Ver código",
+      btn_download: "Descargar (Windows)",
+      btn_wip: "En desarrollo · repo privado",
+      footer_source: "código fuente de este sitio",
+      toast_copied: "Copiado ✓",
+      toast_copy_fail: "No se pudo copiar",
+
+      proj_nexo_title: "NEXO Salud",
+      proj_nexo_desc:
+        "Sistema web de turnos médicos (Proyecto Integrador de Testing de Aplicaciones, UADE): registro e inicio de sesión, profesionales y especialidades, disponibilidad real, reserva y cancelación con reglas de negocio. Evita turnos duplicados con transacciones Serializable y exclusion constraints de PostgreSQL, y se valida con tests unitarios y de integración.",
+      gal_nexo1_t: "Inicio",
+      gal_nexo1_s: "Página pública con acceso a la reserva de turnos y al listado de profesionales.",
+      gal_nexo2_t: "Profesionales",
+      gal_nexo2_s: "Búsqueda por nombre, especialidad y próxima disponibilidad.",
+
+      proj_meta_title: "Metadata Tool",
+      proj_meta_desc:
+        "Aplicación de escritorio para inspeccionar, comparar y sanear metadatos de archivos, con foco en imágenes y privacidad: detecta coordenadas GPS, calcula SHA-256 y pHash para encontrar duplicados exactos o imágenes visualmente similares, analiza carpetas completas y genera copias sin metadatos sin tocar el original.",
+
+      proj_basural_title: "BasuralMap",
+      proj_basural_desc:
+        "Prototipo de monitoreo ambiental ciudadano para reportar y gestionar basurales a cielo abierto: mapa público, formulario de reporte geolocalizado, panel municipal con indicadores y gráficos, y comparación antes/después. Front-end con datos de demostración.",
+
+      proj_mosquito_title: "El Gran Mosquito",
+      proj_mosquito_desc:
+        "Sitio web para una parrilla de Almagro (CABA): carta, horarios con estado abierto/cerrado en tiempo real, reseñas y un formulario de reserva que arma el mensaje y lo envía por WhatsApp. Contenido centralizado en un único archivo de datos para que sea fácil de mantener.",
       gal_resumen_t: "Reporte resumen del agente",
       gal_resumen_s: "Totales, veredictos y estado de ejecución.",
       gal_todos_t: "Ofertas clasificadas",
@@ -449,6 +487,44 @@
         "Python agent that searches job boards, filters by date, area and keywords, avoids duplicates with a per-URL history (vistos.json), classifies opportunities (APPLY/REVIEW/DISCARD) by category and generates monthly Excel reports. The user keeps the final decision to apply.",
       proj_agent_btn: "View code",
       gallery_view: "view screenshots",
+
+      // --- nov 2026 improvements ---
+      skip_link: "Skip to content",
+      home_projects: "./projects",
+      skill_desktop_chip: "Desktop apps",
+      edu1_li7: "Application testing (capstone project)",
+      filter_all: "all",
+      filter_auto: "automation",
+      filter_desktop: "desktop",
+      type_prototype: "Web prototype",
+      type_wip: "Web · in progress",
+      btn_demo: "Live demo",
+      btn_code: "View code",
+      btn_download: "Download (Windows)",
+      btn_wip: "In progress · private repo",
+      footer_source: "source code of this site",
+      toast_copied: "Copied ✓",
+      toast_copy_fail: "Could not copy",
+
+      proj_nexo_title: "NEXO Salud",
+      proj_nexo_desc:
+        "Medical appointment web system (Application Testing capstone project, UADE): sign-up and login, professionals and specialties, real availability, booking and cancellation driven by business rules. It prevents double-booking with Serializable transactions and PostgreSQL exclusion constraints, and is validated with unit and integration tests.",
+      gal_nexo1_t: "Home",
+      gal_nexo1_s: "Public page with access to appointment booking and the list of professionals.",
+      gal_nexo2_t: "Professionals",
+      gal_nexo2_s: "Search by name, specialty and next availability.",
+
+      proj_meta_title: "Metadata Tool",
+      proj_meta_desc:
+        "Desktop application to inspect, compare and sanitize file metadata, focused on images and privacy: it detects GPS coordinates, computes SHA-256 and pHash to find exact duplicates or visually similar images, analyzes whole folders and creates metadata-free copies without touching the original.",
+
+      proj_basural_title: "BasuralMap",
+      proj_basural_desc:
+        "Citizen environmental-monitoring prototype to report and manage open-air dumps: public map, geolocated report form, municipal dashboard with indicators and charts, and before/after comparison. Front-end with demo data.",
+
+      proj_mosquito_title: "El Gran Mosquito",
+      proj_mosquito_desc:
+        "Website for a steakhouse in Almagro (Buenos Aires): menu, opening hours with real-time open/closed status, reviews and a booking form that builds the message and sends it through WhatsApp. Content is centralized in a single data file so it is easy to maintain.",
       gal_resumen_t: "Agent summary report",
       gal_resumen_s: "Totals, verdicts and execution status.",
       gal_todos_t: "Classified job offers",
@@ -698,6 +774,44 @@
         "Agente in Python che cerca offerte di lavoro, filtra per data, zona e parole chiave, evita i duplicati con uno storico per URL (vistos.json), classifica le opportunità (CANDIDARSI/RIVEDERE/SCARTARE) per categoria e genera report Excel mensili. La decisione di candidarsi resta all'utente.",
       proj_agent_btn: "Vedi codice",
       gallery_view: "vedi screenshot",
+
+      // --- miglioramenti nov 2026 ---
+      skip_link: "Vai al contenuto",
+      home_projects: "./progetti",
+      skill_desktop_chip: "App desktop",
+      edu1_li7: "Testing di applicazioni (progetto integratore)",
+      filter_all: "tutti",
+      filter_auto: "automazione",
+      filter_desktop: "desktop",
+      type_prototype: "Prototipo web",
+      type_wip: "Web · in sviluppo",
+      btn_demo: "Vedi demo",
+      btn_code: "Vedi codice",
+      btn_download: "Scarica (Windows)",
+      btn_wip: "In sviluppo · repo privato",
+      footer_source: "codice sorgente di questo sito",
+      toast_copied: "Copiato ✓",
+      toast_copy_fail: "Impossibile copiare",
+
+      proj_nexo_title: "NEXO Salud",
+      proj_nexo_desc:
+        "Sistema web per la gestione di appuntamenti medici (progetto integratore di Testing di Applicazioni, UADE): registrazione e accesso, professionisti e specialità, disponibilità reale, prenotazione e cancellazione con regole di business. Evita le doppie prenotazioni con transazioni Serializable ed exclusion constraint di PostgreSQL, ed è validato con test unitari e di integrazione.",
+      gal_nexo1_t: "Home",
+      gal_nexo1_s: "Pagina pubblica con accesso alla prenotazione e all'elenco dei professionisti.",
+      gal_nexo2_t: "Professionisti",
+      gal_nexo2_s: "Ricerca per nome, specialità e prossima disponibilità.",
+
+      proj_meta_title: "Metadata Tool",
+      proj_meta_desc:
+        "Applicazione desktop per ispezionare, confrontare e ripulire i metadati dei file, con focus su immagini e privacy: rileva le coordinate GPS, calcola SHA-256 e pHash per trovare duplicati esatti o immagini visivamente simili, analizza intere cartelle e genera copie senza metadati senza toccare l'originale.",
+
+      proj_basural_title: "BasuralMap",
+      proj_basural_desc:
+        "Prototipo di monitoraggio ambientale civico per segnalare e gestire discariche a cielo aperto: mappa pubblica, modulo di segnalazione geolocalizzato, pannello comunale con indicatori e grafici, e confronto prima/dopo. Front-end con dati dimostrativi.",
+
+      proj_mosquito_title: "El Gran Mosquito",
+      proj_mosquito_desc:
+        "Sito web per una griglieria di Almagro (Buenos Aires): menù, orari con stato aperto/chiuso in tempo reale, recensioni e un modulo di prenotazione che compone il messaggio e lo invia tramite WhatsApp. I contenuti sono centralizzati in un unico file di dati, facile da mantenere.",
       gal_resumen_t: "Report riepilogativo dell'agente",
       gal_resumen_s: "Totali, verdetti e stato di esecuzione.",
       gal_todos_t: "Offerte classificate",
@@ -774,6 +888,7 @@
 
     document.querySelectorAll(".lang-switch button").forEach((b) => {
       b.classList.toggle("active", b.dataset.lang === lang);
+      b.setAttribute("aria-pressed", b.dataset.lang === lang ? "true" : "false");
     });
 
     // CV según idioma activo

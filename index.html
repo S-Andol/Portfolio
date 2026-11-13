@@ -6,16 +6,25 @@
   <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
   <title>Sergio Andolcetti — Datos · Automatización · Desarrollo</title>
 
-  <meta name="description" content="Sergio Nicolás Andolcetti — perfil híbrido entre datos, automatización y desarrollo, con experiencia real en Supply Chain y procesos. Python, SQL, Power BI, Excel, Streamlit y desarrollo web." />
+  <meta name="description" content="Sergio Nicolás Andolcetti — perfil híbrido entre datos, automatización y desarrollo, con experiencia real en Supply Chain y procesos. Python, SQL, Power BI, TypeScript, Next.js y desarrollo web." />
   <meta name="author" content="Sergio Nicolás Andolcetti" />
-  <meta name="keywords" content="Analista de Datos, Data Analyst, Power BI, SQL, Python, Supply Chain, Desarrollador Web, Sergio Andolcetti" />
+  <meta name="keywords" content="Analista de Datos, Data Analyst, Power BI, SQL, Python, TypeScript, Next.js, Automatización, Supply Chain, Desarrollador Web, Sergio Andolcetti" />
   <meta name="theme-color" content="#05080d" />
+  <link rel="canonical" href="https://andol.dev/" />
 
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://andol.dev/" />
+  <meta property="og:site_name" content="andol.dev" />
+  <meta property="og:locale" content="es_AR" />
   <meta property="og:title" content="Sergio Andolcetti — Datos · Automatización · Desarrollo" />
-  <meta property="og:description" content="Perfil híbrido: análisis de datos, automatización y desarrollo de herramientas, con experiencia real en Supply Chain y procesos. Python · SQL · Power BI · Streamlit." />
-  <meta property="og:image" content="./img/profile.jpg" />
+  <meta property="og:description" content="Perfil híbrido: análisis de datos, automatización y desarrollo de herramientas, con experiencia real en Supply Chain y procesos. Python · SQL · Power BI · TypeScript." />
+  <meta property="og:image" content="https://andol.dev/img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sergio Andolcetti — Datos · Automatización · Desarrollo" />
+  <meta name="twitter:description" content="Análisis de datos, automatización y desarrollo de herramientas, con experiencia real en Supply Chain y procesos." />
+  <meta name="twitter:image" content="https://andol.dev/img/og-image.png" />
 
   <link rel="icon" type="image/svg+xml" href="./img/favicon.svg?v=2" />
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png?v=2" />
@@ -25,20 +34,42 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="./css/styles.css?v=12" />
+  <link rel="stylesheet" href="./css/styles.css?v=15" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sergio Nicolás Andolcetti",
+    "url": "https://andol.dev/",
+    "image": "https://andol.dev/img/profile.jpg",
+    "jobTitle": "Análisis de Datos · Automatización · Desarrollo Web",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "UADE" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Buenos Aires", "addressCountry": "AR" },
+    "knowsLanguage": ["es", "en", "it"],
+    "knowsAbout": ["Python", "SQL", "Power BI", "Excel", "TypeScript", "Next.js", "PostgreSQL", "Web Scraping", "Supply Chain"],
+    "sameAs": [
+      "https://linkedin.com/in/sergio-andolcetti",
+      "https://github.com/S-Andol",
+      "https://github.com/sergio-Andol"
+    ]
+  }
+  </script>
 </head>
 <body>
+
+<a class="skip-link" href="#main" data-i18n="skip_link">Saltar al contenido</a>
 
 <canvas id="matrix" aria-hidden="true"></canvas>
 
 <header>
-  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
     <span></span><span></span><span></span>
   </button>
 
   <a href="#home" class="brand">sergio<span class="muted">@portfolio</span>:~$</a>
 
-  <nav>
+  <nav aria-label="Principal">
     <ul id="navLinks">
       <li><a href="#home" data-i18n="nav_home">Inicio</a></li>
       <li><a href="#about" data-i18n="nav_about">Sobre Mí</a></li>
@@ -49,12 +80,14 @@
     </ul>
   </nav>
 
-  <div class="lang-switch">
-    <button data-lang="es" class="active">ES</button>
-    <button data-lang="en">EN</button>
-    <button data-lang="it">IT</button>
+  <div class="lang-switch" role="group" aria-label="Idioma / Language">
+    <button data-lang="es" class="active" aria-label="Español" aria-pressed="true">ES</button>
+    <button data-lang="en" aria-label="English" aria-pressed="false">EN</button>
+    <button data-lang="it" aria-label="Italiano" aria-pressed="false">IT</button>
   </div>
 </header>
+
+<main id="main">
 
 <!-- ===================== HERO ===================== -->
 <section id="home">
@@ -67,7 +100,7 @@
         </div>
         <div class="win-body">
           <p class="term-line"><span class="t-prompt">visitor@portfolio:~$</span> <span class="t-cmd t-type">whoami</span></p>
-          <p class="term-line t-resp"><span class="t-arrow">➜</span><span class="t-name t-type">Sergio Nicolás Andolcetti</span></p>
+          <h1 class="term-line t-resp"><span class="t-arrow">➜</span><span class="t-name t-type">Sergio Nicolás Andolcetti</span></h1>
 
           <p class="term-line"><span class="t-prompt">visitor@portfolio:~$</span> <span class="t-cmd t-type">role</span></p>
           <p class="term-line t-resp"><span class="t-arrow">➜</span><span class="t-type" data-i18n="home_subtitle">Análisis de Datos · Automatización · Desarrollo Web</span></p>
@@ -76,10 +109,11 @@
           <p class="term-line t-resp"><span class="t-arrow">➜</span><span class="t-type" data-i18n="hero_focus">Transformo procesos operativos en datos, dashboards y herramientas.</span></p>
 
           <p class="term-line"><span class="t-prompt">visitor@portfolio:~$</span> <span class="t-cmd t-type">status</span></p>
-          <p class="term-line t-resp"><span class="status-dot"></span><span class="t-ok t-type" data-i18n="hero_open">Open to work</span><span class="cursor">_</span></p>
+          <p class="term-line t-resp"><span class="status-dot"></span><span class="t-ok t-type" data-i18n="hero_open">Open to work</span><span class="cursor" aria-hidden="true">_</span></p>
         </div>
         <div class="hero-actions">
           <a id="cvDownload" href="./cv-es.pdf" download class="btn" data-i18n="home_cv">Descargar CV</a>
+          <a href="#projects" class="btn-outline" data-i18n="home_projects">./proyectos</a>
           <a href="#contact" class="btn-outline" data-i18n="home_contact">./contacto</a>
         </div>
       </div>
@@ -88,7 +122,7 @@
     <div class="hero-visual">
       <div class="glitch-frame">
         <div class="glitch-wrap">
-          <img src="./img/profile.jpg?v=2" alt="Sergio Nicolás Andolcetti" class="glitch-img" />
+          <img src="./img/profile.webp" alt="Sergio Nicolás Andolcetti" class="glitch-img" width="640" height="640" fetchpriority="high" />
           <span class="holo-tag">user.identity</span>
         </div>
       </div>
@@ -106,7 +140,7 @@
         <span class="dot"></span><span class="dot"></span><span class="dot"></span>
         <span class="win-title">profile.js</span>
       </div>
-      <pre class="code"><span class="row"><span class="c-com" data-i18n="about_code_comment">// perfil profesional</span></span><span class="row"><span class="c-kw">const</span> <span class="c-key">profile</span> <span class="c-punc">=</span> <span class="c-punc">{</span></span><span class="row">  <span class="c-key">experience</span><span class="c-punc">:</span> <span class="c-str" data-i18n="about_code_experience">"Experiencia en Supply Chain, planificación y procesos"</span><span class="c-punc">,</span></span><span class="row">  <span class="c-key">background</span><span class="c-punc">:</span> <span class="c-str">"Supply Chain + Data + Automation + Web"</span><span class="c-punc">,</span></span><span class="row">  <span class="c-key">focus</span><span class="c-punc">:</span> <span class="c-str" data-i18n="about_code_focus">"análisis de datos, automatización y desarrollo de herramientas"</span><span class="c-punc">,</span></span><span class="row">  <span class="c-key">approach</span><span class="c-punc">:</span> <span class="c-str" data-i18n="about_code_approach">"soluciones prácticas orientadas al negocio"</span><span class="c-punc">,</span></span><span class="row">  <span class="c-key">learning</span><span class="c-punc">:</span> <span class="c-str" data-i18n="about_code_learning">"Ingeniería en Informática @ UADE"</span><span class="c-punc">,</span></span><span class="row">  <span class="c-key">languages</span><span class="c-punc">:</span> <span class="c-punc">[</span><span class="c-str">"ES"</span><span class="c-punc">,</span> <span class="c-str">"EN"</span><span class="c-punc">,</span> <span class="c-str">"IT"</span><span class="c-punc">]</span><span class="c-punc">,</span></span><span class="row">  <span class="c-key">tools</span><span class="c-punc">:</span> <span class="c-punc">[</span><span class="c-str">"SQL"</span><span class="c-punc">,</span> <span class="c-str">"Power BI"</span><span class="c-punc">,</span> <span class="c-str">"Python"</span><span class="c-punc">,</span> <span class="c-str">"Streamlit"</span><span class="c-punc">,</span> <span class="c-str">"Excel"</span><span class="c-punc">,</span> <span class="c-str">"HTML"</span><span class="c-punc">,</span> <span class="c-str">"CSS"</span><span class="c-punc">,</span> <span class="c-str">"JS"</span><span class="c-punc">]</span></span><span class="row"><span class="c-punc">}</span></span></pre>
+      <pre class="code"><span class="row"><span class="c-com" data-i18n="about_code_comment">// perfil profesional</span></span><span class="row"><span class="c-kw">const</span> <span class="c-key">profile</span> <span class="c-punc">=</span> <span class="c-punc">{</span></span><span class="row">  <span class="c-key">experience</span><span class="c-punc">:</span> <span class="c-str" data-i18n="about_code_experience">"Experiencia en Supply Chain, planificación y procesos"</span><span class="c-punc">,</span></span><span class="row">  <span class="c-key">background</span><span class="c-punc">:</span> <span class="c-str">"Supply Chain + Data + Automation + Web"</span><span class="c-punc">,</span></span><span class="row">  <span class="c-key">focus</span><span class="c-punc">:</span> <span class="c-str" data-i18n="about_code_focus">"análisis de datos, automatización y desarrollo de herramientas"</span><span class="c-punc">,</span></span><span class="row">  <span class="c-key">approach</span><span class="c-punc">:</span> <span class="c-str" data-i18n="about_code_approach">"soluciones prácticas orientadas al negocio"</span><span class="c-punc">,</span></span><span class="row">  <span class="c-key">learning</span><span class="c-punc">:</span> <span class="c-str" data-i18n="about_code_learning">"Ingeniería en Informática @ UADE"</span><span class="c-punc">,</span></span><span class="row">  <span class="c-key">languages</span><span class="c-punc">:</span> <span class="c-punc">[</span><span class="c-str">"ES"</span><span class="c-punc">,</span> <span class="c-str">"EN"</span><span class="c-punc">,</span> <span class="c-str">"IT"</span><span class="c-punc">]</span><span class="c-punc">,</span></span><span class="row">  <span class="c-key">tools</span><span class="c-punc">:</span> <span class="c-punc">[</span><span class="c-str">"SQL"</span><span class="c-punc">,</span> <span class="c-str">"Power BI"</span><span class="c-punc">,</span> <span class="c-str">"Python"</span><span class="c-punc">,</span> <span class="c-str">"TypeScript"</span><span class="c-punc">,</span> <span class="c-str">"Streamlit"</span><span class="c-punc">,</span> <span class="c-str">"Excel"</span><span class="c-punc">,</span> <span class="c-str">"HTML"</span><span class="c-punc">,</span> <span class="c-str">"CSS"</span><span class="c-punc">,</span> <span class="c-str">"JS"</span><span class="c-punc">]</span></span><span class="row"><span class="c-punc">}</span></span></pre>
     </div>
   </div>
 </section>
@@ -119,9 +153,10 @@
     <div class="skill-cats">
       <div class="skill-cat reveal">
         <div class="cat-head"><span class="t-prompt">$</span> skills <span class="flag">--data</span></div>
-        <div class="cat-title" data-i18n="skillcat_data">Data &amp; BI</div>
+        <h3 class="cat-title" data-i18n="skillcat_data">Data &amp; BI</h3>
         <div class="chips">
           <span class="chip">SQL</span>
+          <span class="chip">PostgreSQL</span>
           <span class="chip">Power BI</span>
           <span class="chip">Excel</span>
           <span class="chip">Data Analytics</span>
@@ -132,20 +167,23 @@
 
       <div class="skill-cat reveal">
         <div class="cat-head"><span class="t-prompt">$</span> skills <span class="flag">--dev</span></div>
-        <div class="cat-title" data-i18n="skillcat_dev">Desarrollo</div>
+        <h3 class="cat-title" data-i18n="skillcat_dev">Desarrollo</h3>
         <div class="chips">
           <span class="chip alt">HTML</span>
           <span class="chip alt">CSS</span>
           <span class="chip alt">JavaScript</span>
+          <span class="chip alt">TypeScript</span>
+          <span class="chip alt">React / Next.js</span>
           <span class="chip alt">Python</span>
           <span class="chip alt">Streamlit</span>
-          <span class="chip alt">GitHub</span>
+          <span class="chip alt">Testing</span>
+          <span class="chip alt">Git / GitHub</span>
         </div>
       </div>
 
       <div class="skill-cat reveal">
         <div class="cat-head"><span class="t-prompt">$</span> skills <span class="flag">--auto</span></div>
-        <div class="cat-title" data-i18n="skillcat_auto">Automatización &amp; Apps</div>
+        <h3 class="cat-title" data-i18n="skillcat_auto">Automatización &amp; Apps</h3>
         <div class="chips">
           <span class="chip alt">Web Scraping</span>
           <span class="chip alt">Playwright</span>
@@ -153,12 +191,13 @@
           <span class="chip alt">Requests</span>
           <span class="chip alt" data-i18n="skill_auto_chip">Automatización</span>
           <span class="chip alt" data-i18n="skill_agents_chip">Agentes</span>
+          <span class="chip alt" data-i18n="skill_desktop_chip">Apps de escritorio</span>
         </div>
       </div>
 
       <div class="skill-cat reveal">
         <div class="cat-head"><span class="t-prompt">$</span> skills <span class="flag">--ops</span></div>
-        <div class="cat-title" data-i18n="skillcat_ops">Operaciones</div>
+        <h3 class="cat-title" data-i18n="skillcat_ops">Operaciones</h3>
         <div class="chips">
           <span class="chip" data-i18n="skill_scm_chip">Supply Chain</span>
           <span class="chip" data-i18n="skill_plan_chip">Planificación</span>
@@ -182,7 +221,7 @@
         <div class="tl-node"></div>
         <div class="tl-card">
           <div class="tl-head">
-            <h4 data-i18n="job1_title">Planner | Galileo Technologies S.A.</h4>
+            <h3 data-i18n="job1_title">Planner | Galileo Technologies S.A.</h3>
             <span class="tl-date" data-i18n="job1_date">Febrero 2024 – Diciembre 2025</span>
           </div>
           <ul>
@@ -197,22 +236,7 @@
         <div class="tl-node"></div>
         <div class="tl-card">
           <div class="tl-head">
-            <h4 data-i18n="job3_title">Responsable de Supply Chain | Galileo Technologies S.A.</h4>
-            <span class="tl-date" data-i18n="job3_date">Octubre 2019 – Diciembre 2021</span>
-          </div>
-          <ul>
-            <li data-i18n="job3_li1">Fortalecí el control de inventarios y los niveles de stock para mejorar la disponibilidad y reducir faltantes.</li>
-            <li data-i18n="job3_li2">Implementé mejoras en procesos logísticos para hacerlos más ordenados, trazables y eficientes.</li>
-            <li data-i18n="job3_li3">Lideré y coordiné equipos operativos, alineando prioridades y responsabilidades.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="tl-item reveal">
-        <div class="tl-node"></div>
-        <div class="tl-card">
-          <div class="tl-head">
-            <h4 data-i18n="job2_title">Administrativo Supply Chain | Galileo Technologies S.A.</h4>
+            <h3 data-i18n="job2_title">Administrativo Supply Chain | Galileo Technologies S.A.</h3>
             <span class="tl-date" data-i18n="job2_date">Enero 2022 – Enero 2024</span>
           </div>
           <ul>
@@ -227,7 +251,22 @@
         <div class="tl-node"></div>
         <div class="tl-card">
           <div class="tl-head">
-            <h4 data-i18n="job4_title">Supervisor de Producción | Cartones América Argentina S.A.</h4>
+            <h3 data-i18n="job3_title">Responsable de Supply Chain | Galileo Technologies S.A.</h3>
+            <span class="tl-date" data-i18n="job3_date">Octubre 2019 – Diciembre 2021</span>
+          </div>
+          <ul>
+            <li data-i18n="job3_li1">Fortalecí el control de inventarios y los niveles de stock para mejorar la disponibilidad y reducir faltantes.</li>
+            <li data-i18n="job3_li2">Implementé mejoras en procesos logísticos para hacerlos más ordenados, trazables y eficientes.</li>
+            <li data-i18n="job3_li3">Lideré y coordiné equipos operativos, alineando prioridades y responsabilidades.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-node"></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <h3 data-i18n="job4_title">Supervisor de Producción | Cartones América Argentina S.A.</h3>
             <span class="tl-date" data-i18n="job4_date">Septiembre 2017 – Septiembre 2019</span>
           </div>
           <ul>
@@ -259,6 +298,7 @@
           <li data-i18n="edu1_li1">Programación orientada a objetos (Java)</li>
           <li data-i18n="edu1_li3">Bases de datos relacionales y SQL</li>
           <li data-i18n="edu1_li5">Análisis de requerimientos y procesos</li>
+          <li data-i18n="edu1_li7">Testing de aplicaciones (proyecto integrador)</li>
         </ul>
       </div>
 
@@ -275,18 +315,18 @@
       <div class="edu-card reveal">
         <h4 data-i18n="cert_ch_title">Certificaciones | CoderHouse</h4>
         <ul class="cert-list">
-          <li><span data-i18n="cert_webdev">Desarrollo Web</span><a href="./Certificados/Desarrollo web - Coder House.png" target="_blank" data-i18n="cert_view">Ver</a></li>
-          <li><span data-i18n="cert_python">Python</span><a href="./Certificados/Python - Coder House.png" target="_blank" data-i18n="cert_view">Ver</a></li>
-          <li><span data-i18n="cert_sql">SQL</span><a href="./Certificados/SQL - Coder House.png" target="_blank" data-i18n="cert_view">Ver</a></li>
-          <li><span data-i18n="cert_da">Data Analytics</span><a href="./Certificados/Data Analytics - Coder House.png" target="_blank" data-i18n="cert_view">Ver</a></li>
+          <li><span data-i18n="cert_webdev">Desarrollo Web</span><a href="./Certificados/Desarrollo web - Coder House.png" target="_blank" rel="noopener noreferrer" data-i18n="cert_view">Ver</a></li>
+          <li><span data-i18n="cert_python">Python</span><a href="./Certificados/Python - Coder House.png" target="_blank" rel="noopener noreferrer" data-i18n="cert_view">Ver</a></li>
+          <li><span data-i18n="cert_sql">SQL</span><a href="./Certificados/SQL - Coder House.png" target="_blank" rel="noopener noreferrer" data-i18n="cert_view">Ver</a></li>
+          <li><span data-i18n="cert_da">Data Analytics</span><a href="./Certificados/Data Analytics - Coder House.png" target="_blank" rel="noopener noreferrer" data-i18n="cert_view">Ver</a></li>
         </ul>
       </div>
 
       <div class="edu-card reveal">
         <h4 data-i18n="cert_sec_title">Ciberseguridad | Educación IT</h4>
         <ul class="cert-list">
-          <li><span data-i18n="cert_sec_1">Introducción a la Ciberseguridad</span><a href="./Certificados/Certificado-Introducción-a-la-Ciberseguridad-EducaciónIT.pdf" target="_blank" data-i18n="cert_view">Ver</a></li>
-          <li><span data-i18n="cert_sec_2">Cibercrimen y Evidencia Digital</span><a href="./Certificados/Certificado-Cibercrimen-y-Evidencia-Digital-EducaciónIT.pdf" target="_blank" data-i18n="cert_view">Ver</a></li>
+          <li><span data-i18n="cert_sec_1">Introducción a la Ciberseguridad</span><a href="./Certificados/Certificado-Introducción-a-la-Ciberseguridad-EducaciónIT.pdf" target="_blank" rel="noopener noreferrer" data-i18n="cert_view">Ver</a></li>
+          <li><span data-i18n="cert_sec_2">Cibercrimen y Evidencia Digital</span><a href="./Certificados/Certificado-Cibercrimen-y-Evidencia-Digital-EducaciónIT.pdf" target="_blank" rel="noopener noreferrer" data-i18n="cert_view">Ver</a></li>
         </ul>
       </div>
     </div>
@@ -298,12 +338,42 @@
   <div class="container">
     <h2 class="section-head"><span class="big" data-i18n="projects_title">Proyectos</span></h2>
 
+    <div class="proj-filter" role="group" aria-label="Filtrar proyectos">
+      <span class="pf-cmd"><span class="t-prompt">$</span> ls <span class="flag">--type</span></span>
+      <button type="button" class="active" data-filter="all" aria-pressed="true"><span data-i18n="filter_all">todos</span><span class="pf-n"></span></button>
+      <button type="button" data-filter="web" aria-pressed="false"><span>web</span><span class="pf-n"></span></button>
+      <button type="button" data-filter="auto" aria-pressed="false"><span data-i18n="filter_auto">automatización</span><span class="pf-n"></span></button>
+      <button type="button" data-filter="data" aria-pressed="false"><span>data</span><span class="pf-n"></span></button>
+      <button type="button" data-filter="desktop" aria-pressed="false"><span data-i18n="filter_desktop">escritorio</span><span class="pf-n"></span></button>
+    </div>
+
     <div class="projects-grid">
 
-      <article class="proj-card reveal">
-        <div class="proj-top"><span class="proj-type web">Web App</span><span class="proj-id">~/proj/01</span></div>
-        <button type="button" class="proj-media" data-gallery='[{"src":"./img/gen-main.jpg","t":"gal_gen1_t","s":"gal_gen1_s"},{"src":"./img/gen-cv.jpg","t":"gal_gen2_t","s":"gal_gen2_s"},{"src":"./img/gen-resultados.jpg","t":"gal_gen3_t","s":"gal_gen3_s"}]' aria-label="Ver capturas del proyecto Agente Laboral Gen">
-          <img src="./img/gen-main.jpg" alt="Agente Laboral Gen — pantalla principal de la app en Streamlit" />
+      <!-- 01 · NEXO SALUD (destacado: ocupa todo el ancho) -->
+      <article class="proj-card featured reveal" data-cat="web">
+        <div class="proj-top"><span class="proj-type web">Full-Stack</span><span class="proj-id">~/proj/01</span></div>
+        <button type="button" class="proj-media" data-gallery='[{"src":"./img/nexo-home.webp","t":"gal_nexo1_t","s":"gal_nexo1_s"},{"src":"./img/nexo-profesionales.webp","t":"gal_nexo2_t","s":"gal_nexo2_s"}]' aria-label="Ver capturas del proyecto NEXO Salud">
+          <img src="./img/nexo-home.webp" alt="NEXO Salud — página de inicio del sistema de turnos médicos" width="1440" height="900" loading="lazy" decoding="async" />
+          <span class="media-zoom">⤢ <span data-i18n="gallery_view">ver capturas</span></span>
+        </button>
+        <div class="proj-body">
+          <h3 data-i18n="proj_nexo_title">NEXO Salud</h3>
+          <p class="proj-solves"><span class="lbl">solves:</span> <span data-i18n="proj_nexo_desc">Sistema web de turnos médicos (Proyecto Integrador de Testing de Aplicaciones, UADE): registro e inicio de sesión, profesionales y especialidades, disponibilidad real, reserva y cancelación con reglas de negocio. Evita turnos duplicados con transacciones Serializable y exclusion constraints de PostgreSQL, y se valida con tests unitarios y de integración.</span></p>
+          <div class="stack">
+            <span class="chip alt">Next.js</span><span class="chip alt">TypeScript</span><span class="chip alt">Tailwind</span><span class="chip alt">Prisma</span><span class="chip alt">PostgreSQL</span><span class="chip alt">JWT</span><span class="chip alt">Docker</span>
+          </div>
+          <div class="proj-actions">
+            <a class="btn-term" href="https://nexo-salud.vercel.app" target="_blank" rel="noopener noreferrer" data-i18n="btn_demo">Ver demo</a>
+            <a class="btn-term ghost" href="https://github.com/S-Andol/nexo-salud" target="_blank" rel="noopener noreferrer" data-i18n="btn_code">Ver código</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 · AGENTE LABORAL GEN -->
+      <article class="proj-card reveal" data-cat="auto">
+        <div class="proj-top"><span class="proj-type web">Web App</span><span class="proj-id">~/proj/02</span></div>
+        <button type="button" class="proj-media" data-gallery='[{"src":"./img/gen-main.webp","t":"gal_gen1_t","s":"gal_gen1_s"},{"src":"./img/gen-cv.webp","t":"gal_gen2_t","s":"gal_gen2_s"},{"src":"./img/gen-resultados.webp","t":"gal_gen3_t","s":"gal_gen3_s"}]' aria-label="Ver capturas del proyecto Agente Laboral Gen">
+          <img src="./img/gen-main.webp" alt="Agente Laboral Gen — pantalla principal de la app en Streamlit" width="1600" height="725" loading="lazy" decoding="async" />
           <span class="media-zoom">⤢ <span data-i18n="gallery_view">ver capturas</span></span>
         </button>
         <div class="proj-body">
@@ -312,14 +382,34 @@
           <div class="stack">
             <span class="chip alt">Python</span><span class="chip alt">Streamlit</span><span class="chip alt">Pandas</span><span class="chip alt">BeautifulSoup</span><span class="chip alt">Requests</span><span class="chip alt">Playwright</span><span class="chip alt">OpenPyXL</span><span class="chip alt">pypdf</span><span class="chip alt">python-docx</span>
           </div>
-          <a class="btn-term" href="https://github.com/sergio-Andol/agente-laboral-gen" target="_blank" rel="noopener noreferrer" data-i18n="proj_gen_btn">Ver código</a>
+          <div class="proj-actions">
+            <a class="btn-term" href="https://github.com/sergio-Andol/agente-laboral-gen" target="_blank" rel="noopener noreferrer" data-i18n="btn_code">Ver código</a>
+          </div>
         </div>
       </article>
 
-      <article class="proj-card reveal">
-        <div class="proj-top"><span class="proj-type auto">Agent</span><span class="proj-id">~/proj/02</span></div>
-        <button type="button" class="proj-media" data-gallery='[{"src":"./img/agente-resumen.jpg","t":"gal_resumen_t","s":"gal_resumen_s"},{"src":"./img/agente-todos.jpg","t":"gal_todos_t","s":"gal_todos_s"}]' aria-label="Ver capturas del proyecto Agente Buscador Laboral">
-          <img src="./img/agente-resumen.jpg" alt="Agente Buscador Laboral — hoja RESUMEN con veredictos POSTULAR / REVISAR / DESCARTAR por categoría" />
+      <!-- 03 · METADATA TOOL -->
+      <article class="proj-card reveal" data-cat="desktop">
+        <div class="proj-top"><span class="proj-type desk">Desktop · v1.0.0</span><span class="proj-id">~/proj/03</span></div>
+        <img src="./img/metadata-tool.svg" alt="Metadata Tool — ilustración del análisis de metadatos de un archivo" width="640" height="360" loading="lazy" decoding="async" />
+        <div class="proj-body">
+          <h3 data-i18n="proj_meta_title">Metadata Tool</h3>
+          <p class="proj-solves"><span class="lbl">solves:</span> <span data-i18n="proj_meta_desc">Aplicación de escritorio para inspeccionar, comparar y sanear metadatos de archivos, con foco en imágenes y privacidad: detecta coordenadas GPS, calcula SHA-256 y pHash para encontrar duplicados exactos o imágenes visualmente similares, analiza carpetas completas y genera copias sin metadatos sin tocar el original.</span></p>
+          <div class="stack">
+            <span class="chip alt">Python</span><span class="chip alt">Tkinter</span><span class="chip alt">ExifTool</span><span class="chip alt">ImageHash</span><span class="chip alt">PyInstaller</span>
+          </div>
+          <div class="proj-actions">
+            <a class="btn-term" href="https://github.com/S-Andol/metadata-tool/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer" data-i18n="btn_download">Descargar (Windows)</a>
+            <a class="btn-term ghost" href="https://github.com/S-Andol/metadata-tool" target="_blank" rel="noopener noreferrer" data-i18n="btn_code">Ver código</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 04 · AGENTE BUSCADOR LABORAL -->
+      <article class="proj-card reveal" data-cat="auto">
+        <div class="proj-top"><span class="proj-type auto">Agent</span><span class="proj-id">~/proj/04</span></div>
+        <button type="button" class="proj-media" data-gallery='[{"src":"./img/agente-resumen.webp","t":"gal_resumen_t","s":"gal_resumen_s"},{"src":"./img/agente-todos.webp","t":"gal_todos_t","s":"gal_todos_s"}]' aria-label="Ver capturas del proyecto Agente Buscador Laboral">
+          <img src="./img/agente-resumen.webp" alt="Agente Buscador Laboral — hoja RESUMEN con veredictos POSTULAR / REVISAR / DESCARTAR por categoría" width="1600" height="674" loading="lazy" decoding="async" />
           <span class="media-zoom">⤢ <span data-i18n="gallery_view">ver capturas</span></span>
         </button>
         <div class="proj-body">
@@ -328,59 +418,106 @@
           <div class="stack">
             <span class="chip alt">Python</span><span class="chip alt">pandas</span><span class="chip alt">Playwright</span><span class="chip alt">BeautifulSoup</span><span class="chip alt">openpyxl</span>
           </div>
-          <a class="btn-term" href="https://github.com/sergio-Andol/agente-buscador-laboral" target="_blank" rel="noopener noreferrer" data-i18n="proj_agent_btn">Ver código</a>
+          <div class="proj-actions">
+            <a class="btn-term" href="https://github.com/sergio-Andol/agente-buscador-laboral" target="_blank" rel="noopener noreferrer" data-i18n="btn_code">Ver código</a>
+          </div>
         </div>
       </article>
 
-      <article class="proj-card reveal">
-        <div class="proj-top"><span class="proj-type">Dashboard</span><span class="proj-id">~/proj/03</span></div>
-        <img src="./img/dashboard.png" alt="Dashboard Power BI" />
+      <!-- 05 · BASURALMAP -->
+      <article class="proj-card reveal" data-cat="web">
+        <div class="proj-top"><span class="proj-type web" data-i18n="type_prototype">Prototipo web</span><span class="proj-id">~/proj/05</span></div>
+        <img class="pos-left" src="./img/basural-panel.webp" alt="BasuralMap — panel municipal de gestión con indicadores" width="800" height="328" loading="lazy" decoding="async" />
+        <div class="proj-body">
+          <h3 data-i18n="proj_basural_title">BasuralMap</h3>
+          <p class="proj-solves"><span class="lbl">solves:</span> <span data-i18n="proj_basural_desc">Prototipo de monitoreo ambiental ciudadano para reportar y gestionar basurales a cielo abierto: mapa público, formulario de reporte geolocalizado, panel municipal con indicadores y gráficos, y comparación antes/después. Front-end con datos de demostración.</span></p>
+          <div class="stack">
+            <span class="chip alt">HTML</span><span class="chip alt">CSS</span><span class="chip alt">JavaScript</span><span class="chip alt">Leaflet</span><span class="chip alt">Chart.js</span><span class="chip alt">GSAP</span>
+          </div>
+          <div class="proj-actions">
+            <a class="btn-term" href="https://s-andol.github.io/BasuralMap/" target="_blank" rel="noopener noreferrer" data-i18n="btn_demo">Ver demo</a>
+            <a class="btn-term ghost" href="https://github.com/S-Andol/BasuralMap" target="_blank" rel="noopener noreferrer" data-i18n="btn_code">Ver código</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 06 · EL GRAN MOSQUITO -->
+      <article class="proj-card reveal" data-cat="web">
+        <div class="proj-top"><span class="proj-type auto" data-i18n="type_wip">Web · en desarrollo</span><span class="proj-id">~/proj/06</span></div>
+        <img src="./img/gran-mosquito.svg" alt="El Gran Mosquito — ilustración del sitio web de la parrilla" width="640" height="360" loading="lazy" decoding="async" />
+        <div class="proj-body">
+          <h3 data-i18n="proj_mosquito_title">El Gran Mosquito</h3>
+          <p class="proj-solves"><span class="lbl">solves:</span> <span data-i18n="proj_mosquito_desc">Sitio web para una parrilla de Almagro (CABA): carta, horarios con estado abierto/cerrado en tiempo real, reseñas y un formulario de reserva que arma el mensaje y lo envía por WhatsApp. Contenido centralizado en un único archivo de datos para que sea fácil de mantener.</span></p>
+          <div class="stack">
+            <span class="chip alt">React</span><span class="chip alt">TypeScript</span><span class="chip alt">Vite</span><span class="chip alt">Tailwind</span><span class="chip alt">TanStack</span>
+          </div>
+          <div class="proj-actions">
+            <span class="btn-term disabled" aria-disabled="true" data-i18n="btn_wip">En desarrollo · repo privado</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 07 · DASHBOARD -->
+      <article class="proj-card reveal" data-cat="data">
+        <div class="proj-top"><span class="proj-type">Dashboard</span><span class="proj-id">~/proj/07</span></div>
+        <img src="./img/dashboard.webp" alt="Dashboard de órdenes de venta en Power BI" width="1280" height="721" loading="lazy" decoding="async" />
         <div class="proj-body">
           <h3 data-i18n="proj1_title">Dashboard de Órdenes de Venta</h3>
           <p class="proj-solves"><span class="lbl">solves:</span> <span data-i18n="proj1_desc">Seguimiento de órdenes, clientes y métodos de envío con KPIs y modelado de datos.</span></p>
           <div class="stack">
-            <span class="chip">Power BI</span><span class="chip">SQL</span><span class="chip">Modelado</span>
+            <span class="chip">Power BI</span><span class="chip">SQL</span><span class="chip" data-i18n="chip_modeling">Modelado</span>
           </div>
-          <a class="btn-term" href="https://github.com/sergio-Andol/Data-Analytics-Project" target="_blank" data-i18n="proj1_btn">Ver en GitHub</a>
+          <div class="proj-actions">
+            <a class="btn-term" href="https://github.com/sergio-Andol/Data-Analytics-Project" target="_blank" rel="noopener noreferrer" data-i18n="proj1_btn">Ver en GitHub</a>
+          </div>
         </div>
       </article>
 
-      <article class="proj-card reveal">
-        <div class="proj-top"><span class="proj-type auto">Automation</span><span class="proj-id">~/proj/04</span></div>
-        <img src="./img/Automatizá ventas en Instagram → WhatsApp.png" alt="Automatización Instagram a WhatsApp" />
+      <!-- 08 · INSTAGRAM → WHATSAPP -->
+      <article class="proj-card reveal" data-cat="auto">
+        <div class="proj-top"><span class="proj-type auto">Automation</span><span class="proj-id">~/proj/08</span></div>
+        <img class="pos-top" src="./img/instagram-whatsapp.webp" alt="Automatización de Instagram a WhatsApp" width="1024" height="1536" loading="lazy" decoding="async" />
         <div class="proj-body">
           <h3 data-i18n="proj_auto_title">Automatización Instagram → WhatsApp</h3>
           <p class="proj-solves"><span class="lbl">solves:</span> <span data-i18n="proj_auto_desc">Responde comentarios en Instagram y deriva consultas a WhatsApp, agilizando el primer contacto.</span></p>
           <div class="stack">
             <span class="chip alt">ManyChat</span><span class="chip alt">Instagram API</span><span class="chip alt">No-Code</span>
           </div>
-          <a class="btn-term" href="https://docs.google.com/document/d/18VgB-cTHXMP8T9hL74V7rQLQ9lwM5jnn9aUUElCrtIU/edit?usp=sharing" target="_blank" data-i18n="proj_auto_btn">Ver documentación</a>
+          <div class="proj-actions">
+            <a class="btn-term" href="https://docs.google.com/document/d/18VgB-cTHXMP8T9hL74V7rQLQ9lwM5jnn9aUUElCrtIU/edit?usp=sharing" target="_blank" rel="noopener noreferrer" data-i18n="proj_auto_btn">Ver documentación</a>
+          </div>
         </div>
       </article>
 
-      <article class="proj-card reveal">
-        <div class="proj-top"><span class="proj-type web">Web App</span><span class="proj-id">~/proj/05</span></div>
-        <img src="./img/Terapia Animal.png" alt="Terapia Animal" />
+      <!-- 09 · TERAPIA ANIMAL -->
+      <article class="proj-card reveal" data-cat="web">
+        <div class="proj-top"><span class="proj-type web">Web</span><span class="proj-id">~/proj/09</span></div>
+        <img class="pos-top" src="./img/terapia-animal.webp" alt="Sitio web Terapia Animal" width="1280" height="900" loading="lazy" decoding="async" />
         <div class="proj-body">
           <h3 data-i18n="proj2_title">Terapia Animal</h3>
           <p class="proj-solves"><span class="lbl">solves:</span> <span data-i18n="proj2_desc">Sitio institucional de servicios con foco en experiencia de usuario y navegación simple.</span></p>
           <div class="stack">
             <span class="chip alt">HTML</span><span class="chip alt">CSS</span><span class="chip alt">UX/UI</span>
           </div>
-          <a class="btn-term" href="https://s-andol.github.io/Terapia-Animal/" target="_blank" data-i18n="proj2_btn">Ver Página</a>
+          <div class="proj-actions">
+            <a class="btn-term" href="https://s-andol.github.io/Terapia-Animal/" target="_blank" rel="noopener noreferrer" data-i18n="proj2_btn">Ver Página</a>
+          </div>
         </div>
       </article>
 
-      <article class="proj-card reveal">
-        <div class="proj-top"><span class="proj-type web">Web App</span><span class="proj-id">~/proj/06</span></div>
-        <img src="./img/Eureka.png" alt="Eureka" />
+      <!-- 10 · EUREKA -->
+      <article class="proj-card reveal" data-cat="web">
+        <div class="proj-top"><span class="proj-type web">Web</span><span class="proj-id">~/proj/10</span></div>
+        <img class="pos-top" src="./img/eureka.webp" alt="Sitio web Eureka" width="1280" height="657" loading="lazy" decoding="async" />
         <div class="proj-body">
           <h3 data-i18n="proj3_title">Diseño Web Eureka</h3>
           <p class="proj-solves"><span class="lbl">solves:</span> <span data-i18n="proj3_desc">Plataforma educativa responsive con navegación por secciones para cualquier dispositivo.</span></p>
           <div class="stack">
             <span class="chip alt">HTML</span><span class="chip alt">CSS</span><span class="chip alt">Responsive</span>
           </div>
-          <a class="btn-term" href="https://sergio-andol.github.io/TPO-Eureka/" target="_blank" data-i18n="proj3_btn">Ver Página</a>
+          <div class="proj-actions">
+            <a class="btn-term" href="https://sergio-andol.github.io/TPO-Eureka/" target="_blank" rel="noopener noreferrer" data-i18n="proj3_btn">Ver Página</a>
+          </div>
         </div>
       </article>
 
@@ -402,51 +539,55 @@
         <div class="c-row">
           <span class="c-cmd"><span class="t-prompt">$</span> connect <span class="flag">--email</span></span>
           <a href="mailto:sergio.andol@gmail.com">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
             sergio.andol@gmail.com
           </a>
-          <button class="copy-btn" onclick="copyToClipboard('sergio.andol@gmail.com')">[copy]</button>
+          <button type="button" class="copy-btn" data-copy="sergio.andol@gmail.com" aria-label="Copiar email">[copy]</button>
         </div>
 
         <div class="c-row">
           <span class="c-cmd"><span class="t-prompt">$</span> connect <span class="flag">--linkedin</span></span>
-          <a href="https://linkedin.com/in/sergio-andolcetti" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <a href="https://linkedin.com/in/sergio-andolcetti" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
             in/sergio-andolcetti
           </a>
-          <button class="copy-btn" onclick="copyToClipboard('https://linkedin.com/in/sergio-andolcetti')">[copy]</button>
+          <button type="button" class="copy-btn" data-copy="https://linkedin.com/in/sergio-andolcetti" aria-label="Copiar LinkedIn">[copy]</button>
         </div>
 
         <div class="c-row">
           <span class="c-cmd"><span class="t-prompt">$</span> connect <span class="flag">--github</span></span>
-          <a href="https://github.com/sergio-Andol" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            github.com/sergio-Andol
+          <a href="https://github.com/S-Andol" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            github.com/S-Andol
           </a>
-          <button class="copy-btn" onclick="copyToClipboard('https://github.com/sergio-Andol')">[copy]</button>
+          <a class="c-alt" href="https://github.com/sergio-Andol" target="_blank" rel="noopener noreferrer">+ sergio-Andol</a>
+          <button type="button" class="copy-btn" data-copy="https://github.com/S-Andol" aria-label="Copiar GitHub">[copy]</button>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+</main>
+
 <footer>
   <p><span class="neon">&gt;</span> &copy; 2026 Sergio Nicolás Andolcetti · <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
+  <p class="foot-src"><a href="https://github.com/S-Andol/Portfolio" target="_blank" rel="noopener noreferrer" data-i18n="footer_source">código fuente de este sitio</a></p>
 </footer>
 
-<div id="toast" class="toast">Copiado ✓</div>
+<div id="toast" class="toast" role="status" aria-live="polite">Copiado ✓</div>
 <button id="toTop" class="to-top" aria-label="Volver arriba">↑</button>
 
 <!-- Lightbox / galería -->
-<div id="lightbox" class="lightbox" aria-hidden="true">
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Capturas del proyecto" aria-hidden="true">
   <button class="lb-close" aria-label="Cerrar">✕</button>
   <div class="lb-content"></div>
 </div>
 
-<script src="./js/matrix.js?v=13"></script>
-<script src="./js/main.js?v=13"></script>
-<script src="./js/reveal.js?v=13"></script>
-<script src="./js/i18n.js?v=13"></script>
+<script src="./js/matrix.js?v=15"></script>
+<script src="./js/main.js?v=15"></script>
+<script src="./js/reveal.js?v=15"></script>
+<script src="./js/i18n.js?v=15"></script>
 
 </body>
 </html>

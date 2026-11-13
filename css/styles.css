@@ -343,7 +343,7 @@ nav a:hover::before, nav a.active::before{ opacity:1; }
 /* =========================================================
    ABOUT  — code card
 ========================================================= */
-.code-card{ max-width: 760px; }
+.code-card{ max-width: 900px; }
 .code{
   margin:0;
   padding: 18px 20px;
@@ -377,7 +377,7 @@ nav a:hover::before, nav a.active::before{ opacity:1; }
 ========================================================= */
 .skill-cats{
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
 .skill-cat{
@@ -444,7 +444,7 @@ nav a:hover::before, nav a.active::before{ opacity:1; }
 }
 .tl-card:hover{ transform: translateX(3px); border-color: rgba(0,255,163,0.28); }
 .tl-head{ display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:baseline; }
-.tl-head h4{ margin:0; font-size: 16px; color: var(--text); }
+.tl-head h3, .tl-head h4{ margin:0; font-size: 16px; font-weight:700; color: var(--text); }
 .tl-date{ font-family: var(--mono); font-size:12px; color: var(--neon-dim); white-space:nowrap; }
 .tl-card ul{ margin:10px 0 0; padding-left:18px; }
 .tl-card li{ margin:6px 0; color: var(--muted); }
@@ -734,4 +734,115 @@ footer .neon{ color: var(--neon); }
   .status-dot, .cursor, .glitch-wrap::after, .glitch-img,
   .glitch-wrap:hover .glitch-img{ animation:none !important; }
   #matrix{ display:none; }
+}
+
+
+/* =========================================================
+   MEJORAS NOV 2026 — proyectos, filtros, accesibilidad
+========================================================= */
+
+/* --- accesibilidad --- */
+.skip-link{
+  position:fixed; top:-60px; left:16px; z-index:6000;
+  font-family: var(--mono); font-size:13px; font-weight:700;
+  background: var(--neon); color:#04110c;
+  padding:10px 16px; border-radius:8px; text-decoration:none;
+  transition: top .15s ease;
+}
+.skip-link:focus{ top:12px; }
+
+a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-visible{
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* el nombre es el h1 de la pagina, pero se ve como una linea mas del terminal */
+h1.term-line{ font: inherit; font-size: inherit; line-height: inherit; }
+h3.cat-title{ font-family: var(--sans); }
+
+/* --- hero: tercer boton --- */
+.hero-actions{ gap: 10px; }
+
+/* --- filtros de proyectos --- */
+.proj-filter{
+  display:flex; flex-wrap:wrap; align-items:center; gap:8px;
+  margin: -6px 0 22px;
+  font-family: var(--mono); font-size:12.5px;
+}
+.pf-cmd{ color: var(--muted); margin-right:4px; }
+.pf-cmd .t-prompt{ color: var(--neon); }
+.pf-cmd .flag{ color: var(--cyan); }
+.proj-filter button{
+  font-family: var(--mono); font-size:12.5px;
+  background: transparent; color: var(--muted);
+  border:1px solid var(--line); border-radius:999px;
+  padding:5px 12px; cursor:pointer; transition: all .18s;
+  display:inline-flex; align-items:center; gap:6px;
+}
+.proj-filter button:hover{ color: var(--neon); border-color: rgba(0,255,163,0.45); }
+.proj-filter button.active{ background: var(--neon); border-color: var(--neon); color:#04110c; font-weight:700; }
+.pf-n{ font-size:10.5px; opacity:.75; }
+.pf-n:not(:empty)::before{ content:"·"; margin-right:5px; }
+
+.proj-card.is-hidden{ display:none; }
+
+/* --- cards de proyecto --- */
+.projects-grid{ grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.proj-type.desk{ color:#c9a6ff; }
+.proj-card img.pos-left{ object-position: left top; }
+.proj-card img.pos-top{ object-position: center top; }
+.proj-body h3{ line-height:1.3; }
+
+.proj-actions{ display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+.proj-actions .btn-term{ margin-top:0; flex:1 1 auto; text-align:center; }
+.btn-term.ghost{ border-color: var(--line); color: var(--text); }
+.btn-term.ghost:hover{ background: rgba(0,255,163,0.10); color: var(--neon); border-color: var(--neon); box-shadow:none; }
+span.btn-term.disabled{ justify-content:center; }
+span.btn-term.disabled:hover{ background: transparent; color: var(--muted); box-shadow:none; }
+
+/* --- contacto: segunda cuenta de GitHub --- */
+.c-row a.c-alt{ font-family: var(--mono); font-size:12px; color: var(--muted); }
+.c-row a.c-alt:hover{ color: var(--neon); }
+
+/* --- footer --- */
+.foot-src{ margin-top:6px !important; font-size:11.5px !important; }
+.foot-src a{ color: var(--muted); text-decoration:none; border-bottom:1px dashed var(--line); }
+.foot-src a:hover{ color: var(--neon); }
+
+@media (max-width: 640px){
+  .skill-cats{ grid-template-columns: 1fr; }
+  .proj-filter{ margin-top:0; }
+  .pf-cmd{ width:100%; }
+}
+
+/* header: entre 761 y 1140px el logo se pisaba con el menu centrado */
+@media (min-width: 761px) and (max-width: 1140px){
+  nav ul{ gap: 20px; }
+  .brand .muted{ display:none; }
+}
+@media (min-width: 761px) and (max-width: 900px){
+  .brand{ display:none; }
+}
+
+/* --- proyecto destacado: card horizontal a todo el ancho (deja 3x3 debajo) --- */
+@media (min-width: 761px){
+  .proj-card.featured{
+    grid-column: 1 / -1;
+    display:grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
+  }
+  .proj-card.featured .proj-top{ grid-column: 1 / -1; }
+  .proj-card.featured .proj-media{ height:100%; }
+  .proj-card.featured .proj-media img{
+    height:100%; min-height:330px;
+    border-bottom:0; border-right:1px solid var(--line);
+    object-position: center top;
+  }
+  .proj-card.featured .proj-body{ padding: 24px 26px; justify-content:center; gap:14px; }
+  .proj-card.featured .proj-body h3{ font-size:23px; }
+  .proj-card.featured .proj-solves{ font-size:14.5px; line-height:1.65; }
+  .proj-card.featured .stack{ margin-top:2px; }
+  .proj-card.featured .proj-actions .btn-term{ flex:0 1 auto; padding-left:26px; padding-right:26px; }
 }
